@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-28 16:22:01.267382",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tender_name",
+  "section_break_iceua",
+  "description",
+  "section_break_jrl0r",
+  "deadline",
+  "approval_status",
+  "tender_amount",
+  "approved_date",
+  "bg_amount",
+  "attachments",
+  "column_break_imkcd",
+  "number_of_manpower",
+  "created_by",
+  "approval_by",
+  "emd_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "tender_name",
+   "fieldtype": "Data",
+   "label": "Tender Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "\nDraft\nPending\nApproval\nApproved\nRejected"
+  },
+  {
+   "fieldname": "tender_amount",
+   "fieldtype": "Currency",
+   "label": "Tender Amount"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approval_by",
+   "fieldtype": "Link",
+   "label": "Approval By",
+   "options": "User"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "column_break_imkcd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iceua",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_jrl0r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emd_amount",
+   "fieldtype": "Currency",
+   "label": "EMD Amount"
+  },
+  {
+   "fieldname": "bg_amount",
+   "fieldtype": "Currency",
+   "label": "BG Amount"
+  },
+  {
+   "fieldname": "number_of_manpower",
+   "fieldtype": "Currency",
+   "label": "Number of Manpower"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Upcoming Tenders",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-31 17:12:35.705214",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Upcoming Tenders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tender_name"
+}

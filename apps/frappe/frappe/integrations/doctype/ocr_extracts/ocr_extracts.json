@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-07 13:39:54.948555",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "section_break_l3iey",
+  "extracted_text",
+  "section_break_pxwr7",
+  "language",
+  "processing_status",
+  "timestamp"
+ ],
+ "fields": [
+  {
+   "fieldname": "document",
+   "fieldtype": "Link",
+   "label": "Document ",
+   "options": "Document Master"
+  },
+  {
+   "fieldname": "section_break_l3iey",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "extracted_text",
+   "fieldtype": "Text Editor",
+   "label": "Extracted Text"
+  },
+  {
+   "fieldname": "section_break_pxwr7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "\nEnglish\nPunjabi"
+  },
+  {
+   "fieldname": "processing_status",
+   "fieldtype": "Select",
+   "label": "Processing Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-07 13:39:54.948555",
+ "modified_by": "Administrator",
+ "module": "Integrations",
+ "name": "OCR Extracts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

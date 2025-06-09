@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-21 13:48:58.241430",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "icon_name",
+  "icon_url",
+  "icon_svg",
+  "icon_metadata",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "icon_name",
+   "fieldtype": "Data",
+   "label": "Icon Name"
+  },
+  {
+   "fieldname": "icon_url",
+   "fieldtype": "Data",
+   "label": "Icon URL"
+  },
+  {
+   "fieldname": "icon_svg",
+   "fieldtype": "Attach",
+   "label": "Icon SVG"
+  },
+  {
+   "fieldname": "icon_metadata",
+   "fieldtype": "Text",
+   "label": "Icon Metadata"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nAvailable\nFetched"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-21 13:48:58.241430",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Noun Project Icon",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

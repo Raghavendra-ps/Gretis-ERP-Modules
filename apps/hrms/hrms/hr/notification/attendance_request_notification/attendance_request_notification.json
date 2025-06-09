@@ -1,0 +1,38 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2024-07-15 10:41:10.884953",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Attendance Request",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear {{ doc.approver }},\nAn attendance request has been submitted for your approval.\nEmployee: {{ employee_name }}\nFrom: {{ from_date }}\nTo: {{ to_date }}\nReason: {{ reason }}\nPlease review and take necessary action.\nRegards,\nGretis",
+ "method": "send_approval_notification",
+ "modified": "2024-07-16 10:22:31.011748",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Attendance Request Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "CEO"
+  },
+  {
+   "receiver_by_role": "HR Manager"
+  },
+  {
+   "receiver_by_role": "GM OPS"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "{{ doc.employee_name }} - Attendance Request",
+ "value_changed": "workflow_state"
+}

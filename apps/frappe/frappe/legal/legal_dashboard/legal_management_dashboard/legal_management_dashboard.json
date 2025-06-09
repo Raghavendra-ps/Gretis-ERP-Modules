@@ -1,0 +1,40 @@
+{
+ "cards": [
+  {
+   "card": "Compliance Tasks Overdue"
+  },
+  {
+   "card": "Cases Ready for Closure"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Cases by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Appeals Status Tracking",
+   "width": "Half"
+  },
+  {
+   "chart": "Cases by Type",
+   "width": "Half"
+  },
+  {
+   "chart": "Upcoming Hearings",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-01-10 15:25:07.937559",
+ "dashboard_name": "Legal Management Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-01-10 16:34:05.292556",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Legal Management Dashboard",
+ "owner": "Administrator"
+}

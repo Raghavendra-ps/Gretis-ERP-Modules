@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:55:51.397955",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_title",
+  "case_number",
+  "case_arguments_section",
+  "argument_dates",
+  "summary_of_plaintiffs_arguments",
+  "summary_of_defendants_arguments",
+  "legal_precedents_cited",
+  "key_legal_points_raised",
+  "attorney_notes_on_arguments"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Initiation"
+  },
+  {
+   "fetch_from": "case_title.case_number_issued_by_court",
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "label": "Case Number"
+  },
+  {
+   "fieldname": "case_arguments_section",
+   "fieldtype": "Section Break",
+   "label": "Case Arguments"
+  },
+  {
+   "fieldname": "argument_dates",
+   "fieldtype": "Date",
+   "label": " Argument Dates"
+  },
+  {
+   "fieldname": "summary_of_plaintiffs_arguments",
+   "fieldtype": "Text Editor",
+   "label": "Summary of Plaintiffs Arguments"
+  },
+  {
+   "fieldname": "summary_of_defendants_arguments",
+   "fieldtype": "Text Editor",
+   "label": " Summary of Defendants Arguments"
+  },
+  {
+   "fieldname": "legal_precedents_cited",
+   "fieldtype": "Link",
+   "label": "Legal Precedents Cited",
+   "options": "Legal Precedents"
+  },
+  {
+   "fieldname": "key_legal_points_raised",
+   "fieldtype": "Text Editor",
+   "label": "Key Legal Points Raised"
+  },
+  {
+   "fieldname": "attorney_notes_on_arguments",
+   "fieldtype": "Text Editor",
+   "label": "Attorney Notes on Arguments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:34.254031",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Case Arguments",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title"
+}

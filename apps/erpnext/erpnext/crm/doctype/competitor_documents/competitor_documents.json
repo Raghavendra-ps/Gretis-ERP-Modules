@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-02 15:17:16.456763",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "document_attach",
+  "document_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "label": "Document Type"
+  },
+  {
+   "fieldname": "document_attach",
+   "fieldtype": "Attach",
+   "label": "Document Attach"
+  },
+  {
+   "fieldname": "document_preview",
+   "fieldtype": "HTML",
+   "label": "Document Preview"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-02 15:33:18.920877",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Competitor Documents",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "document_type"
+}

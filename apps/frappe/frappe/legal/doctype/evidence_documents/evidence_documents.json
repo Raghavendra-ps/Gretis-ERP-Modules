@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 13:55:28.047421",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "evidence_attachments",
+  "allegations"
+ ],
+ "fields": [
+  {
+   "fieldname": "document",
+   "fieldtype": "Data",
+   "label": "Document "
+  },
+  {
+   "fieldname": "evidence_attachments",
+   "fieldtype": "Attach",
+   "label": "Evidence Attachments"
+  },
+  {
+   "fieldname": "allegations",
+   "fieldtype": "Data",
+   "label": "Allegations"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-06 13:55:28.047421",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Evidence Documents",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

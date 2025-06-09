@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 15:08:42.385144",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_documentation",
+  "section_break_okkqj",
+  "case_title",
+  "case_numberissued_by_court",
+  "task_name",
+  "column_break_wdqdl",
+  "assigned_to",
+  "due_date",
+  "task_status",
+  "column_break_l4qu8",
+  "priority",
+  "section_break_qqdlo",
+  "updatesnotes",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.filing_date",
+   "fieldname": "case_numberissued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number(issued by court)"
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task Name"
+  },
+  {
+   "fieldname": "column_break_wdqdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "task_status",
+   "fieldtype": "Select",
+   "label": "Task Status",
+   "options": "\nPending\nIn Progress\nCompleted\nOverdue"
+  },
+  {
+   "fieldname": "column_break_l4qu8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "section_break_qqdlo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "updatesnotes",
+   "fieldtype": "Text Editor",
+   "label": "Updates/Notes"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This Stage tracks tasks assigned to personnel related to legal cases.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_okkqj",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2024-12-24 16:38:31.072056",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Task Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

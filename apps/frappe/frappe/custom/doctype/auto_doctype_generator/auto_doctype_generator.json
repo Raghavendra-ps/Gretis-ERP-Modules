@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-28 12:07:45.124048",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field_details",
+  "action_type",
+  "target_name",
+  "text_input"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_details",
+   "fieldtype": "Text",
+   "label": "Field Details"
+  },
+  {
+   "fieldname": "action_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Action Type",
+   "options": "\nCreate Doctype\nCreate Workflow\nCreate Email Notification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_name",
+   "fieldtype": "Data",
+   "label": "Target Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "text_input",
+   "fieldtype": "Code",
+   "label": "Text Input"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 10:49:48.932051",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Auto Doctype Generator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

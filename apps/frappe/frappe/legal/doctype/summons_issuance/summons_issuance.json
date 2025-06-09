@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 13:47:47.889747",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctype_description",
+  "document_types",
+  "summon_details_section",
+  "case_title",
+  "received_by",
+  "column_break_ym4eh",
+  "case_number_issued_by_court",
+  "document_type",
+  "column_break_0reyk",
+  "response_due_date",
+  "date_of_receipt",
+  "section_break_ofkni",
+  "upload_receipt",
+  "upload_receipt_preview",
+  "section_break_ag5cn",
+  "required_action",
+  "section_break_ymu6k",
+  "response_status",
+  "column_break_e5aq7",
+  "linked_response_document",
+  "linked_document_preview",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "column_break_ym4eh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "summon_details_section",
+   "fieldtype": "Section Break",
+   "label": "Summon Details"
+  },
+  {
+   "description": "(Date when the summons was received by the opposing party)",
+   "fieldname": "date_of_receipt",
+   "fieldtype": "Date",
+   "label": "Date of Receipt"
+  },
+  {
+   "fieldname": "column_break_0reyk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Link",
+   "label": "Received By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nSummons\nNotice\nSubpoena\nCourt Order"
+  },
+  {
+   "fieldname": "response_due_date",
+   "fieldtype": "Date",
+   "label": "Response Due Date"
+  },
+  {
+   "fieldname": "section_break_ag5cn",
+   "fieldtype": "Section Break",
+   "label": "Compliance"
+  },
+  {
+   "description": "Details of the actions required for compliance.",
+   "fieldname": "required_action",
+   "fieldtype": "Text Editor",
+   "label": "Required Action"
+  },
+  {
+   "fieldname": "linked_response_document",
+   "fieldtype": "Attach",
+   "label": "Linked Response Document"
+  },
+  {
+   "fieldname": "response_status",
+   "fieldtype": "Select",
+   "label": "Response Status",
+   "options": "\nPending\nResponded\nEscalated\nClosed"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "column_break_e5aq7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ymu6k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "upload_receipt",
+   "fieldtype": "Attach",
+   "label": "Upload Receipt "
+  },
+  {
+   "fieldname": "upload_receipt_preview",
+   "fieldtype": "HTML",
+   "label": "Upload Receipt Preview"
+  },
+  {
+   "fieldname": "linked_document_preview",
+   "fieldtype": "HTML",
+   "label": "Linked Document Preview"
+  },
+  {
+   "fieldname": "doctype_description",
+   "fieldtype": "HTML",
+   "label": "Doctype Description",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This Document helps the corporate team efficiently manage the receipt and tracking of summons or legal notices. It ensures timely responses and minimizes risks of legal defaults.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_ofkni",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "document_types",
+   "fieldtype": "HTML",
+   "label": "Document Types",
+   "options": "<div style=\"background-color: #e8f4ff; padding: 10px; border-left: 5px solid #007BFF; border-radius: 4px;\">\n    <strong>Document Type Guide:</strong><br>\n    <ul style=\"margin: 5px 0 0 15px; padding-left: 0;\">\n        <li><strong>Summons:</strong> A legal notice issued by a court requiring a party to appear or respond.</li>\n        <li><strong>Notice:</strong> A formal communication, often issued before legal proceedings, seeking action or response.</li>\n        <li><strong>Subpoena:</strong> A legal order requiring someone to produce documents or appear in court.</li>\n        <li><strong>Court Order:</strong> A directive issued by a judge mandating specific legal compliance.</li>\n    </ul>\n</div>\n"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-06-05 17:38:48.346850",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Summons Issuance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

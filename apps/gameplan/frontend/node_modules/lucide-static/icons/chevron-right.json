@@ -1,0 +1,19 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "colebemis"
+  ],
+  "tags": [
+    "arrow",
+    "code",
+    "command line",
+    "terminal",
+    "prompt",
+    "shell"
+  ],
+  "categories": [
+    "arrows",
+    "development",
+    "shapes"
+  ]
+}

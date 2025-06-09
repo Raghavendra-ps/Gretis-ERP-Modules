@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-12 13:43:23.249555",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prompt",
+  "response",
+  "script_type",
+  "generated_script",
+  "doctype_name",
+  "fields_json"
+ ],
+ "fields": [
+  {
+   "fieldname": "prompt",
+   "fieldtype": "Data",
+   "label": "Prompt"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Text",
+   "label": "Response"
+  },
+  {
+   "fieldname": "script_type",
+   "fieldtype": "Select",
+   "label": "Script Type",
+   "options": "\nServer\nClient"
+  },
+  {
+   "fieldname": "generated_script",
+   "fieldtype": "Text",
+   "label": "Generated Script"
+  },
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Data",
+   "label": "DocType Name"
+  },
+  {
+   "fieldname": "fields_json",
+   "fieldtype": "Text",
+   "label": "Fields JSON"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-12 13:43:33.886186",
+ "modified_by": "Administrator",
+ "module": "Custom Bot",
+ "name": "Bot Configuration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

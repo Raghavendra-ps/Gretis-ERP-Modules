@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:44:49.374112",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "case_title",
+  "case_reference",
+  "witness_list",
+  "examination_details_details_of_witess_examination",
+  "examination_date",
+  "summary_of_testimony_summary_of_witness_statement"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "case_reference",
+   "fieldtype": "Data",
+   "label": "Case Reference"
+  },
+  {
+   "fieldname": "witness_list",
+   "fieldtype": "Table",
+   "label": "Witness List",
+   "options": "Witness List"
+  },
+  {
+   "fieldname": "examination_details_details_of_witess_examination",
+   "fieldtype": "Text",
+   "label": "Examination Details (Details of Witess Examination)"
+  },
+  {
+   "fieldname": "examination_date",
+   "fieldtype": "Date",
+   "label": "Examination Date"
+  },
+  {
+   "fieldname": "summary_of_testimony_summary_of_witness_statement",
+   "fieldtype": "Text",
+   "label": "Summary of Testimony (Summary of Witness Statement)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:30.937429",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Examination-in-Chief",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

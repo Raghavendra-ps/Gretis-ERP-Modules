@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-04-23 17:18:44.157185",
+ "default_email_template": "Fee Record Notiication",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_name",
+  "designation",
+  "column_break_dzits",
+  "department",
+  "remarks",
+  "reference",
+  "reference_contact_no",
+  "date_of_submission",
+  "received_by",
+  "received_by_name",
+  "column_break_h64wc",
+  "handed_over_to",
+  "handed_over_to_name",
+  "email",
+  "employee_joining_fee",
+  "receiver_signature",
+  "acknowledged_by",
+  "section_break_ykyjo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name"
+  },
+  {
+   "fieldname": "employee_joining_fee",
+   "fieldtype": "Select",
+   "label": "Employee Joining Fee",
+   "options": "\n800\n1000\n1200\n1500\n2000\n3500\n5000\nWaived Off (Ref)"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "date_of_submission",
+   "fieldtype": "Date",
+   "label": "Date of Submission"
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Link",
+   "label": "Received By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "handed_over_to",
+   "fieldtype": "Link",
+   "label": "Handed Over To",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "receiver_signature",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Receiver Signature "
+  },
+  {
+   "fieldname": "acknowledged_by",
+   "fieldtype": "Attach",
+   "label": "Acknowledged By "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fee Record",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dzits",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_h64wc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "handed_over_to.user_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_ykyjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "\nHARYANA AUTHORITY FOR ADVANCE RULNG\nEUNOIA HOSPITALITY PVT. LTD.\nPUNJAB GENCO\nState Urban Development Authority\nLabour Department Chandigarh\nFISDOM\nMBSPSU, PATIALA\nLegal Remembrance\nICICI BANK\nCHIEF EXECUTIVE OFFICER, DRDA PANCHKULA\nCITRUS ESTATE SRI MUKATSAR SAHIB\nChairman Punjab Educational Tribunal\nMC DERABASSI\nCITRUS ESTATE HOSHIARPUR\nHDFC BANK\nDC OFFICE MALERKOTLA\nCULTURAL AFFAIRS\nPUNJAB AGRI EXPORT CORPORATION LTD (PAGREXCO)\nGURU NANAK DEV UNIVERSITY\nPUNJAB POLLUTION CONTROL BOARD\nAGRICULTURE AND FARMERS WELFARE DEPARTMENT HARYANA\nPUNJAB HERITAGE AND TOURISM PERMOSSION BOARD\nSchool\nItc Limited\nPunjab Agri Export Corporation Ltd (Chd)\nDirectorate of Health & Family Welfare\nPatiala District Blood Transfusion Council Govt. Medical College Patiala\nDirectorate of Tourism Punjab\nPunjab Tourism Dev. Corporation\nPUNJAB STATE LOTTERY DEPARTMENT CHD\nITC\nPunjab Energy Development Agency\nPunjab State Information Commission\nPUNJAB STATE URBAN LIVELIHOOD MISSION\nState Level Environment Impact Assessment Authority\nDistrict and Sessions Judge, Sri Muktsar Sahib\nADC Office Tarn Taran\nBank of Maharashtra - ZO CHD.\nBank of Maharashtra ZO. Ludhiana Pb\nDITS (NIC) PKL GST\nHaryana State Rural Livelihood Mission\nPrintforce Australia Pty Ltd\nM/S PUNJAB BIOTECHNOLOGY INCUBATOR\nPunjab Police Complaints Authorty\nPUNJAB STATE SPORTS COUNCIL CHANDIGARH New\nState Institute of Rural Development & Panchayati Raj\nSTATE GOVT YOUTH SERVICES PUNJAB\nDISTRICT ELECTION OFFICER AMRITSAR\nDISTRICT ELECTION OFFICER BARNALA\nDISTRICT ELECTION OFFICER BATHINDA\nDISTRICT ELECTION OFFICER FARIDKOT -1\nDISTRICT ELECTION OFFICER FATEHGARH SAHIB\nDISTRICT ELECTION OFFICER FAZILKA\nDISTRICT ELECTION OFFICER FEROZEPUR\nDISTRICT ELECTION OFFICER  GURDASPUR\nDISTRICT ELECTION OFFICER HOSHIARPUR\nDISTRICT ELECTION OFFICER JALANDHAR\nDISTRICT ELECTION OFFICER KAPURTHALA\nDISTRICT ELECTION OFFICER LUDHIANA\nDISTRICT ELECTION OFFICER - MALERKOTLA\nDISTRICT ELECTION OFFICER MANSA\nDISTRICT ELECTION OFFICER MOGA\nElection Commission SAS Nagar\nDISTRICT ELECTION OFFICER MUKTSAR\nDISTRICT ELECTION OFFICER PATHANKOT\nDISTRICT ELECTION OFFICER PATIALA\nDISTRICT ELECTION OFFICER ROPAR\nDISTRICT ELECTION OFFICER SANGRUR\nDISTRICT ELECTION OFFICER NAWANSHAHR\nDISTRICT ELECTION OFFICER TARN TARAN\nElection Department Punjab\nPunjab State Legal Services Authority Amritsar\nPunjab State Legal Services Authority Barnala\nPunjab State Legal Services Authority Bathinda\nPunjab State Legal Services Authority Faridkot\nPunjab State Legal Services Authority Fatehgarh Sahib\nPunjab State Legal Services Authority Fazilka\nPunjab State Legal Services Authority Ferozepur\nPunjab State Legal Services Authority Gurdaspur\nPunjab State Legal Services Authority Hoshiarpur\nPunjab State Legal Services Authority Jalandhar\nPunjab State Legal Services Authority Kapurthala\nDistrict Legal Services Authority Ludhiana\nPunjab State Legal Services Authority Mansa\nPunjab State Legal Services Authority Moga\nPunjab State Legal Services Authority Mohali CHD\nDistrict Legal Services Authority Mohali\nPunjab State Legal Services Authority Muktsar Sahib\nPunjab State Legal Services Authority Nawanshahr\nPunjab State Legal Services Authority Pathankot\nDistrict Legal Services Authority Patiala\nPunjab State Legal Services Authority Ropar\nDistrict Legal Services Authority Sangrur\nPunjab State Legal Services Authority Tarn Taran\nPunjab Water Supply & Sewerage Board Div No.1 Amritsar\nPunjab Water Supply & Sewerage Board Bathinda\nPunjab Water Supply & Sewerage Board\nPunjab Water Supply & Sewerage Board Ferozepur\nPunjab Water Supply & Sewerage Board Gurdaspur\nPunjab Water Supply & Sewerage Board Jalandhar\nPunjab Water Supply & Sewerage Board Division No. 2 Ludhiana\nPunjab Water Supply & Sewerage Sub Division, Malout\nPunjab Water Supply & Sewerage Board Moga New\nPunjab Water Supply & Sewerage Board Mansa\nPunjab Water Supply & Sewerage Board Division No. 1 Patiala\nPunjab Water Supply & Sewerage Board Division No. 2 Patiala\nPunjab Water Supply & Sewerage Board Division Sangrur\nADC UD Amritsar\nANANDPUR SAHIB FOUNDATION\nADC UD Bathinda\nFOOD CRAFT INSTITUTE\nHaryana Human Right Commission\nIHM BATHINDA\nMC ABOHAR Accounts Branch\nMC ABOHAR Accounts Branch\nMC ABOHAR SB\nMC ALAWALPUR\nMC BALACHAUR\nMC BANGA\nMC BATALA\nMC BATALA SB\nMC BATALA IEC CB EXPERT\nMC BATHINDA CLERK/ Peon/ GIS\nMC BATHINDA CLC STAFF 1\nMC BATHINDA CLC STAFF 2\nMC BATHINDA IEC Expert\nMC Begowal\nMC DERA BASSI\nMC DORAHA\nMC FIROZPUR (DDR SB)\nMC GORAYA\nMC Hoshiarpur (Comm)\nMC Hoshiarpur (SB)\nMC Hoshiarpur Health Branch\nMC JALANDHAR O&M / B&R\nMC JALANDHAR (ADC UD) DEO/MIS/IEC\nMC JALANDHAR SBM\nMC KHARAR\nMC LUDHIANA O&M\nMC LUDHIANA City Bus Service\nMC LUDHIANA Dratsman\nMC LUDHIANA B&R\nMC LUDHIANA SBM\nMC LUDHIANA SAHNEWAL (ADC UD) DEO/IEC EXPERT\nMC LUDHIANA SAHNEWAL (ADC UD) Narinder Pal Kaur (CO)\nMC Macchhiwara\nMC MANSA (ADC UD)\nMC MOGA DEO/PEON/DRIVER/ELEC/HELPER/SANITORY\nMC MOGA IEC EXPERT\nMC MOGA SBM\nMC MOGA Mali Branch\nMC MOHALI MIS EXPERT\nMC MOHALI IEC EXPERT/SWM EXPERT\nMC Mullanpur Dhaka\nMC NAWANSHAHR\nMC NAYAGAON\nMC NOORMAHAL\nMC PATHANKOT\nMC Patiala Health Branch\nMC PATIALA SB\nMC PATIALA IEC Expert\nMC Phagwara\nMC PHILLAUR Clerk/ Safai Sewak / Sweeper\nMC PHILLAUR Firemen/ Driver\nMC RAHON (SBS NAGAR)\nMC RAJPURA\nMC RAJPURA Harinder Singh\nMC SAMRALA\nMC SULTANPUR LODHI\nMC ZIRAKPUR\nNRI COMISSION\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti\nPanchayat Samiti Zila Parishad\nPEAR ESTATE AMRITSAR\nPHTPB\nPIRA\nPIS\nPMIDC\nPSHRC (Punjab State Human Rights Commission)\nUTKARSH SOCIETY\nLokpal\nLocal Government"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "received_by.employee_name",
+   "fieldname": "received_by_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Received By Name"
+  },
+  {
+   "fetch_from": "handed_over_to.employee_name",
+   "fieldname": "handed_over_to_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Handed Over To Name"
+  },
+  {
+   "fieldname": "reference_contact_no",
+   "fieldtype": "Data",
+   "label": "Reference Contact No"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-22 15:08:10.475040",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Fee Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "candidate_name"
+}

@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:22:41.625489",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_documentation",
+  "case_details_section",
+  "case_title",
+  "case_number_issued_by_court",
+  "filing_party",
+  "column_break_q4c6v",
+  "document_type",
+  "assigned_advocate",
+  "filing_deadline",
+  "column_break_45xys",
+  "filing_date",
+  "defendants_response_to_replication",
+  "status_of_filing",
+  "column_break_h7zpi",
+  "draft_date",
+  "section_break_xltux",
+  "written_statement_and_reply",
+  "section_break_4mdh0",
+  "remarks",
+  "title",
+  "issues_framed"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "defendants_response_to_replication",
+   "fieldtype": "Attach",
+   "label": "Document Attachment"
+  },
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fieldname": "column_break_h7zpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_q4c6v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_45xys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filing_party",
+   "fieldtype": "Data",
+   "label": "Filing Party"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nWritten Statement\nReply\nReplication"
+  },
+  {
+   "fieldname": "status_of_filing",
+   "fieldtype": "Select",
+   "label": "Status of Filing",
+   "options": "\nPending Draft\nReady to File\nFiled\nRejected"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "filing_deadline",
+   "fieldtype": "Date",
+   "label": "Filing Deadline"
+  },
+  {
+   "fieldname": "assigned_advocate",
+   "fieldtype": "Link",
+   "label": "Assigned Advocate",
+   "options": "Advocate Master"
+  },
+  {
+   "fieldname": "draft_date",
+   "fieldtype": "Date",
+   "label": "Draft Date"
+  },
+  {
+   "fetch_from": "case_title.filing_date",
+   "fieldname": "filing_date",
+   "fieldtype": "Date",
+   "label": "Filing Date"
+  },
+  {
+   "fieldname": "section_break_xltux",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This stage manages the preparation and filing of written statements, replies, or replications, ensuring that deadlines are met and responses are properly documented.</strong>\n</div>\n"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "written_statement_and_reply",
+   "fieldtype": "Table",
+   "label": "Written Statement and Reply",
+   "options": "Written Statement child Table"
+  },
+  {
+   "fieldname": "section_break_4mdh0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issues_framed",
+   "fieldtype": "Attach",
+   "label": "Issues Framed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-04-19 13:36:02.870277",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Written Statement and Reply",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:34:38.590017",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "detailed_list_of_the_charges_as_framed_by_the_court_section",
+  "charge_number",
+  "description_of_charge",
+  "relevant_lawsection",
+  "doc_upload"
+ ],
+ "fields": [
+  {
+   "fieldname": "detailed_list_of_the_charges_as_framed_by_the_court_section",
+   "fieldtype": "Section Break",
+   "label": "Detailed list of the Charges as framed by the court"
+  },
+  {
+   "fieldname": "charge_number",
+   "fieldtype": "Data",
+   "label": "Charge Number"
+  },
+  {
+   "fieldname": "description_of_charge",
+   "fieldtype": "Text",
+   "label": "Description of Charge"
+  },
+  {
+   "fieldname": "relevant_lawsection",
+   "fieldtype": "Data",
+   "label": "Relevant Law/Section"
+  },
+  {
+   "fieldname": "doc_upload",
+   "fieldtype": "Attach",
+   "label": "Doc Upload"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-06 15:34:38.590017",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Plaintiff Detailed list of the Charges",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 12:31:05.779627",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "legal_precedents_section",
+  "precedent_details",
+  "description_of_precedent"
+ ],
+ "fields": [
+  {
+   "fieldname": "legal_precedents_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Precedents"
+  },
+  {
+   "fieldname": "precedent_details",
+   "fieldtype": "Data",
+   "label": "Precedent Details"
+  },
+  {
+   "fieldname": "description_of_precedent",
+   "fieldtype": "Small Text",
+   "label": "Description of Precedent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-06 12:31:05.779627",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Legal Precedents",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "precedent_details"
+}

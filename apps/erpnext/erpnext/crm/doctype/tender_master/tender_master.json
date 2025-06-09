@@ -1,0 +1,303 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-25 12:37:53.075588",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_name",
+  "expense_manager_section",
+  "annual_cost",
+  "percentage_fields_section",
+  "fd_rate",
+  "tds_on_gst",
+  "admin_charges",
+  "column_break_cktnf",
+  "tds_on_invoice",
+  "emd_rate",
+  "advance_salary",
+  "column_break_lufui",
+  "bank_guarantee_expense",
+  "interest_on_limit",
+  "fd_on_bg",
+  "column_break_rcaig",
+  "gst_rate",
+  "bg_rate",
+  "advance_salary_days",
+  "amount_fields_section",
+  "emd_amount",
+  "tds_on_gst_amt",
+  "column_break_z8lcp",
+  "tds_on_invoice_amt",
+  "bg_amount",
+  "column_break_khhyq",
+  "less_gst_annual_value",
+  "section_break_ajpcx",
+  "bg_expense",
+  "uniform_cost_per_person",
+  "number_of_persons",
+  "uniform_expense",
+  "labour_licence_cost_per_person",
+  "count_of_persons",
+  "labour_expense",
+  "column_break_3bmns",
+  "advance_salary_expense",
+  "margin_at_10_percent",
+  "interest_on_limit_expense",
+  "income_on_fd",
+  "total_expense_bg",
+  "summary_section",
+  "total_expense",
+  "total_income",
+  "net_income"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_manager_section",
+   "fieldtype": "Section Break",
+   "label": "Expense Manager"
+  },
+  {
+   "fieldname": "percentage_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Percentage Fields"
+  },
+  {
+   "fieldname": "fd_rate",
+   "fieldtype": "Float",
+   "label": "FD Rate"
+  },
+  {
+   "fieldname": "column_break_cktnf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lufui",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rcaig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_khhyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Amount Fields"
+  },
+  {
+   "fieldname": "bg_amount",
+   "fieldtype": "Currency",
+   "label": "BG Amount"
+  },
+  {
+   "fieldname": "tds_on_gst",
+   "fieldtype": "Float",
+   "label": "TDS on GST"
+  },
+  {
+   "fieldname": "fd_on_bg",
+   "fieldtype": "Float",
+   "label": "FD on BG"
+  },
+  {
+   "fieldname": "column_break_z8lcp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ajpcx",
+   "fieldtype": "Section Break",
+   "label": "Expenses"
+  },
+  {
+   "fieldname": "column_break_3bmns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uniform_cost_per_person",
+   "fieldtype": "Currency",
+   "label": "Uniform Cost per Person"
+  },
+  {
+   "fieldname": "labour_licence_cost_per_person",
+   "fieldtype": "Currency",
+   "label": "Labour Licence Cost per Person"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_income",
+   "fieldtype": "Currency",
+   "label": "Total Income"
+  },
+  {
+   "fieldname": "total_expense",
+   "fieldtype": "Currency",
+   "label": "Total Expense"
+  },
+  {
+   "fieldname": "net_income",
+   "fieldtype": "Currency",
+   "label": "Net Income"
+  },
+  {
+   "fieldname": "emd_amount",
+   "fieldtype": "Currency",
+   "label": "EMD Amount"
+  },
+  {
+   "fieldname": "tds_on_invoice",
+   "fieldtype": "Float",
+   "label": "TDS on invoice"
+  },
+  {
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Cost"
+  },
+  {
+   "fieldname": "admin_charges",
+   "fieldtype": "Float",
+   "label": "Admin Charges"
+  },
+  {
+   "fieldname": "emd_rate",
+   "fieldtype": "Float",
+   "label": "EMD Rate"
+  },
+  {
+   "fieldname": "bank_guarantee_expense",
+   "fieldtype": "Float",
+   "label": "Bank Guarantee Expense"
+  },
+  {
+   "fieldname": "gst_rate",
+   "fieldtype": "Float",
+   "label": "GST Rate"
+  },
+  {
+   "fieldname": "bg_rate",
+   "fieldtype": "Float",
+   "label": "BG Rate"
+  },
+  {
+   "fieldname": "advance_salary",
+   "fieldtype": "Float",
+   "label": "Advance Salary"
+  },
+  {
+   "fieldname": "interest_on_limit",
+   "fieldtype": "Float",
+   "label": "Interest on Limit"
+  },
+  {
+   "fieldname": "income_on_fd",
+   "fieldtype": "Currency",
+   "label": "Income on FD"
+  },
+  {
+   "fieldname": "advance_salary_days",
+   "fieldtype": "Float",
+   "label": "Advance Salary Days"
+  },
+  {
+   "fieldname": "bg_expense",
+   "fieldtype": "Currency",
+   "label": "BG Expense"
+  },
+  {
+   "fieldname": "uniform_expense",
+   "fieldtype": "Currency",
+   "label": "Uniform Expense"
+  },
+  {
+   "fieldname": "labour_expense",
+   "fieldtype": "Currency",
+   "label": "Labour Expense"
+  },
+  {
+   "fieldname": "tds_on_gst_amt",
+   "fieldtype": "Currency",
+   "label": "TDS on GST Amt"
+  },
+  {
+   "fieldname": "tds_on_invoice_amt",
+   "fieldtype": "Currency",
+   "label": "TDS on Invoice Amt"
+  },
+  {
+   "fieldname": "less_gst_annual_value",
+   "fieldtype": "Currency",
+   "label": "Less GST Annual Value"
+  },
+  {
+   "fieldname": "margin_at_10_percent",
+   "fieldtype": "Currency",
+   "label": "Margin @ 10 percent"
+  },
+  {
+   "fieldname": "advance_salary_expense",
+   "fieldtype": "Currency",
+   "label": "Advance Salary Expense"
+  },
+  {
+   "fieldname": "interest_on_limit_expense",
+   "fieldtype": "Currency",
+   "label": "Interest on Limit Expense"
+  },
+  {
+   "fieldname": "number_of_persons",
+   "fieldtype": "Int",
+   "label": "Number of Persons"
+  },
+  {
+   "fieldname": "count_of_persons",
+   "fieldtype": "Int",
+   "label": "Count of Persons"
+  },
+  {
+   "fieldname": "total_expense_bg",
+   "fieldtype": "Currency",
+   "label": "Total Expense BG"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 17:45:37.832288",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "client_name"
+}

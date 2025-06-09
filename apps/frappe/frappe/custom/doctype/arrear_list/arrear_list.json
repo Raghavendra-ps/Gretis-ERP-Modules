@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-22 16:36:59.123433",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "state",
+  "revised_salary",
+  "category",
+  "month_from",
+  "month_to",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nPunjab Min Wages\nHaryana Min Wages\nChandigarh Min Wages"
+  },
+  {
+   "fieldname": "revised_salary",
+   "fieldtype": "Currency",
+   "label": "Revised Salary"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nUn-Skilled\nSemi-Skilled\nSkilled\nHighly-Skilled\nStaff Category(A)\nStaff Category(B)\nStaff Category(C)\nStaff Category(D)"
+  },
+  {
+   "fieldname": "month_from",
+   "fieldtype": "Date",
+   "label": "Month From"
+  },
+  {
+   "fieldname": "month_to",
+   "fieldtype": "Date",
+   "label": "Month To"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-19 13:30:51.878582",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Arrear List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

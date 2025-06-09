@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-15 14:43:41.645306",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "employee_name",
+  "full_name",
+  "assigned_department",
+  "ip_address",
+  "mac_address",
+  "column_break_5g0ku",
+  "pc_name",
+  "pc_working_status",
+  "antivirus_due_date",
+  "column_break_phdlt",
+  "last_maintenance_date",
+  "location",
+  "motherboard_model",
+  "motherboard_generation",
+  "hardware_specifications"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Section Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "assigned_department",
+   "fieldtype": "Link",
+   "label": "Assigned Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "pc_name",
+   "fieldtype": "Data",
+   "label": "PC Name"
+  },
+  {
+   "fieldname": "pc_working_status",
+   "fieldtype": "Small Text",
+   "label": "PC Working Status"
+  },
+  {
+   "fieldname": "antivirus_due_date",
+   "fieldtype": "Select",
+   "label": "Antivirus Installed or Not",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "mac_address",
+   "fieldtype": "Data",
+   "label": "MAC Address"
+  },
+  {
+   "fieldname": "last_maintenance_date",
+   "fieldtype": "Date",
+   "label": "Last Maintenance Date"
+  },
+  {
+   "fieldname": "hardware_specifications",
+   "fieldtype": "Table",
+   "label": "Hardware Specifications",
+   "options": "Hardware Specifications"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5g0ku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_phdlt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "employee_name.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "motherboard_model",
+   "fieldtype": "Data",
+   "label": "Motherboard Model"
+  },
+  {
+   "fieldname": "motherboard_generation",
+   "fieldtype": "Data",
+   "label": "Motherboard Generation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-17 16:07:18.949270",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Computer Inventory",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Office Assistant",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

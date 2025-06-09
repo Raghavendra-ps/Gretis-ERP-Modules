@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-18 11:48:25.966470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type",
+  "from_date",
+  "to_date",
+  "status",
+  "total_leave_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "label": "Leave Type"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "total_leave_days",
+   "fieldtype": "Float",
+   "label": "Total Leave Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-18 11:48:25.966470",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Leave Application Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

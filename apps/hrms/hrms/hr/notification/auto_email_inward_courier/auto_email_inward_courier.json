@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.email_id",
+ "creation": "2024-04-23 15:03:16.078410",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Inward Courier",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2024-04-23 15:29:28.886560",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Auto Email Inward Courier",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "{{ doc.email_id}}",
+   "receiver_by_document_field": "owner"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Gretis",
+ "sender_email": "info@gretisindia.com",
+ "set_property_after_alert": "email_id",
+ "subject": "New Inward Courier Submission ((inward_courier}}",
+ "value_changed": "email_id"
+}

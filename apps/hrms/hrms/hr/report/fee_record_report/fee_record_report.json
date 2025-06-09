@@ -1,0 +1,95 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Fee Record",
+   "width": 200
+  },
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name",
+   "width": 200
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "width": 200
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference",
+   "width": 0
+  },
+  {
+   "fieldname": "reference_contact_no",
+   "fieldtype": "Data",
+   "label": "Reference Contact No",
+   "width": 0
+  },
+  {
+   "fieldname": "date_of_submission",
+   "fieldtype": "Date",
+   "label": "Date of Submission",
+   "width": 150
+  },
+  {
+   "fieldname": "employee_joining_fee",
+   "fieldtype": "Currency",
+   "label": "Employee Joining Fee",
+   "width": 150
+  }
+ ],
+ "creation": "2024-07-22 12:25:04.938945",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": "Gretis Letter Head",
+ "modified": "2024-12-18 13:47:13.947057",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Fee Record Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \r\n    name, candidate_name, department, reference, date_of_submission, \r\n    received_by, handed_over_to, email, employee_joining_fee, acknowledged_by\r\nFROM \r\n    `tabFee Record`\r\nWHERE \r\n    date_of_submission BETWEEN %(start_date)s AND %(end_date)s\r\n",
+ "ref_doctype": "Fee Record",
+ "report_name": "Fee Record Report",
+ "report_script": "import frappe\r\nfrom frappe import _\r\n\r\ndef execute(filters=None):\r\n    if filters is None:\r\n        filters = {\r\n            'from_date': '2000-01-01',\r\n            'to_date': '2100-01-01'\r\n        }\r\n    \r\n    # Ensure filters have the correct keys\r\n    if 'from_date' not in filters or 'to_date' not in filters:\r\n        frappe.throw(_(\"Filters must include 'from_date' and 'to_date'.\"))\r\n\r\n    # Define columns for the report\r\n    columns = [\r\n        {\"label\": _(\"Candidate Name\"), \"fieldname\": \"candidate_name\", \"fieldtype\": \"Data\", \"width\": 200},\r\n        {\"label\": _(\"Department\"), \"fieldname\": \"department\", \"fieldtype\": \"Data\", \"width\": 200},\r\n        {\"label\": _(\"Reference\"), \"fieldname\": \"reference\", \"fieldtype\": \"Data\", \"width\": 200},\r\n        {\"label\": _(\"Date of Submission\"), \"fieldname\": \"date_of_submission\", \"fieldtype\": \"Date\", \"width\": 150},\r\n        {\"label\": _(\"Received By\"), \"fieldname\": \"received_by\", \"fieldtype\": \"Link\", \"options\": \"Employee\", \"width\": 200},\r\n        {\"label\": _(\"Handed Over To\"), \"fieldname\": \"handed_over_to\", \"fieldtype\": \"Link\", \"options\": \"Employee\", \"width\": 200},\r\n        {\"label\": _(\"Email\"), \"fieldname\": \"email\", \"fieldtype\": \"Data\", \"width\": 200},\r\n        {\"label\": _(\"Employee Joining Fee\"), \"fieldname\": \"employee_joining_fee\", \"fieldtype\": \"Select\", \"width\": 150},\r\n        {\"label\": _(\"Acknowledged By\"), \"fieldname\": \"acknowledged_by\", \"fieldtype\": \"Attach\", \"width\": 200}\r\n    ]\r\n    \r\n    # SQL query to get data based on filters\r\n    data = frappe.db.sql(\"\"\"\r\n        SELECT\r\n            candidate_name,\r\n            department,\r\n            reference,\r\n            date_of_submission,\r\n            received_by,\r\n            handed_over_to,\r\n            email,\r\n            employee_joining_fee,\r\n            acknowledged_by\r\n        FROM\r\n            `tabFee Record`\r\n        WHERE\r\n            date_of_submission BETWEEN %(from_date)s AND %(to_date)s\r\n        ORDER BY\r\n            date_of_submission DESC\r\n    \"\"\", filters, as_dict=True)\r\n    \r\n    return columns, data\r\n",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Front Desk"
+  },
+  {
+   "role": "GM OPS"
+  }
+ ]
+}

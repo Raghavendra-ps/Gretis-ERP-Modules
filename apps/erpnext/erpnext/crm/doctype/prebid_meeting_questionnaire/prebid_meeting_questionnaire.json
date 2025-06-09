@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-30 13:39:05.750394",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "answer",
+  "accepted_by_client"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Text Editor",
+   "label": "Question"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Text Editor",
+   "label": "Answers by Client"
+  },
+  {
+   "default": "0",
+   "fieldname": "accepted_by_client",
+   "fieldtype": "Check",
+   "label": "Accepted by Client"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-21 12:47:43.310134",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Prebid Meeting Questionnaire",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

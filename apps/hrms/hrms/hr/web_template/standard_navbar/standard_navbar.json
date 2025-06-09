@@ -1,0 +1,25 @@
+{
+ "__unsaved": 1,
+ "creation": "2020-08-19 17:49:37.288380",
+ "docstatus": 0,
+ "doctype": "Web Template",
+ "fields": [
+  {
+   "__unsaved": 1,
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 0
+  }
+ ],
+ "idx": 0,
+ "modified": "2024-04-30 10:36:16.621693",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Standard Navbar",
+ "owner": "Administrator",
+ "standard": 1,
+ "template": "",
+ "type": "Navbar"
+}

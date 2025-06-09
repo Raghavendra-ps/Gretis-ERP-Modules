@@ -1,0 +1,629 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"DuJcGL_AJq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"5wbnQUxCDr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Onboarding\",\"col\":3}},{\"id\":\"V_Npcut-Vn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Separation\",\"col\":3}},{\"id\":\"I2sYvGtdgG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Grievance\",\"col\":3}},{\"id\":\"yXVOoN6RH-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dashboard\",\"col\":3}},{\"id\":\"Rgf0YKUewx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"GDE6uPRitr\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"New Hires (This Month)\",\"col\":4}},{\"id\":\"q3UvUCIXzD\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Exits (This Month)\",\"col\":4}},{\"id\":\"JW2Tf3N3iZ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Trainings (This Week)\",\"col\":4}},{\"id\":\"XcxGbB9eWl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"4a_wYdsSEy\",\"type\":\"card\",\"data\":{\"card_name\":\"Recruitment\",\"col\":4}},{\"id\":\"6o7DB8vpfG\",\"type\":\"card\",\"data\":{\"card_name\":\"Onboarding\",\"col\":4}},{\"id\":\"u1dCvb9K3m\",\"type\":\"card\",\"data\":{\"card_name\":\"Training\",\"col\":4}},{\"id\":\"6eYirRK-9D\",\"type\":\"card\",\"data\":{\"card_name\":\"Performance Management\",\"col\":4}},{\"id\":\"mjP5Tgd4_U\",\"type\":\"card\",\"data\":{\"card_name\":\"Grievance\",\"col\":4}},{\"id\":\"RP-w9hxBOp\",\"type\":\"card\",\"data\":{\"card_name\":\"Exit\",\"col\":4}},{\"id\":\"Hqa8XdJnaA\",\"type\":\"card\",\"data\":{\"card_name\":\"Daily Work Summary\",\"col\":4}},{\"id\":\"MFIgIl8TVV\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"id\":\"tlojwVMgBD\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Templates\",\"col\":4}}]",
+ "creation": "2022-08-20 14:06:34.309347",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "assign",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Employee Lifecycle",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Grievance",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Grievance Type",
+   "link_count": 0,
+   "link_to": "Grievance Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Grievance",
+   "link_count": 0,
+   "link_to": "Employee Grievance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Exit",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Separation Template",
+   "link_count": 0,
+   "link_to": "Employee Separation Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Separation",
+   "link_count": 0,
+   "link_to": "Employee Separation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Full and Final Settlement",
+   "link_count": 0,
+   "link_to": "Full and Final Statement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Exit Interview",
+   "link_count": 0,
+   "link_to": "Exit Interview",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Program",
+   "link_count": 0,
+   "link_to": "Training Program",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Event",
+   "link_count": 0,
+   "link_to": "Training Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Feedback",
+   "link_count": 0,
+   "link_to": "Training Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Result",
+   "link_count": 0,
+   "link_to": "Training Result",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Work Summary",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Work Summary",
+   "link_count": 0,
+   "link_to": "Daily Work Summary",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Work Summary Group",
+   "link_count": 0,
+   "link_to": "Daily Work Summary Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Work Summary Replies",
+   "link_count": 0,
+   "link_to": "Daily Work Summary Replies",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Master Report",
+   "link_count": 0,
+   "link_to": "Employee Information",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Birthday",
+   "link_count": 0,
+   "link_to": "Employee Birthday",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Exit Report",
+   "link_count": 0,
+   "link_to": "Employee Exits",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Analytics",
+   "link_count": 0,
+   "link_to": "Employee Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Analytics",
+   "link_count": 0,
+   "link_to": "Recruitment Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appraisal Overview",
+   "link_count": 0,
+   "link_to": "Appraisal Overview",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Performance Management",
+   "link_count": 10,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Promotion",
+   "link_count": 0,
+   "link_to": "Employee Promotion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Transfer",
+   "link_count": 0,
+   "link_to": "Employee Transfer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appraisal Template",
+   "link_count": 0,
+   "link_to": "Appraisal Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "KRA",
+   "link_count": 0,
+   "link_to": "KRA",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Feedback Criteria",
+   "link_count": 0,
+   "link_to": "Employee Feedback Criteria",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appraisals",
+   "link_count": 0,
+   "link_to": "Appraisal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appraisal Cycle",
+   "link_count": 0,
+   "link_to": "Appraisal Cycle",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Performance Feedback",
+   "link_count": 0,
+   "link_to": "Employee Performance Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Goal",
+   "link_count": 0,
+   "link_to": "Goal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Skill Mapping",
+   "link_count": 0,
+   "link_to": "Employee Skill Map",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other Templates",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Onboarding Template",
+   "link_count": 0,
+   "link_to": "Employee Onboarding Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Onboarding",
+   "link_count": 0,
+   "link_to": "Employee Onboarding",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment Letter Template",
+   "link_count": 0,
+   "link_to": "Appointment Letter Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Onboarding",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Add New Employee",
+   "link_count": 0,
+   "link_to": "Self Onboarding Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment Letter",
+   "link_count": 0,
+   "link_to": "Appointment Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Master",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment",
+   "link_count": 12,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Manpower Requisition",
+   "link_count": 0,
+   "link_to": "Job Requisition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Current Openings",
+   "link_count": 0,
+   "link_to": "Job Opening",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Referral",
+   "link_count": 0,
+   "link_to": "Employee Referral",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Job Application",
+   "link_count": 0,
+   "link_to": "Job Applicant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Offer Letter",
+   "link_count": 0,
+   "link_to": "Job Offer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interview ",
+   "link_count": 0,
+   "link_to": "Interview",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interview Type",
+   "link_count": 0,
+   "link_to": "Interview Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interview Round",
+   "link_count": 0,
+   "link_to": "Interview Round",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interviewer ",
+   "link_count": 0,
+   "link_to": "Interviewer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interview Feedback",
+   "link_count": 0,
+   "link_to": "Interview Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interview Detail",
+   "link_count": 0,
+   "link_to": "Interview Detail",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment Letter ",
+   "link_count": 0,
+   "link_to": "Appointment Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-02-06 15:48:03.015451",
+ "modified_by": "dir@gretisindia.com",
+ "module": "HR",
+ "name": "Employee Lifecycle",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "HR",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Employee",
+   "label": "New Hires (This Month)",
+   "quick_list_filter": "{\"date_of_joining\":[\"Timespan\",\"this month\"]}"
+  },
+  {
+   "document_type": "Training Event",
+   "label": "Trainings (This Week)",
+   "quick_list_filter": "{\"start_time\":[\"Timespan\",\"this week\"]}"
+  },
+  {
+   "document_type": "Employee",
+   "label": "Exits (This Month)",
+   "quick_list_filter": "{\"relieving_date\":[\"Timespan\",\"this month\"]}"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Self-Onboarding User"
+  },
+  {
+   "role": "HR Manager"
+  }
+ ],
+ "sequence_id": 12.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Dashboard",
+   "link_to": "Employee Lifecycle",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} Pending",
+   "label": "Employee Onboarding",
+   "link_to": "Employee Onboarding",
+   "stats_filter": "{\"boarding_status\":[\"=\",\"Pending\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} Pending",
+   "label": "Employee Separation",
+   "link_to": "Employee Separation",
+   "stats_filter": "{\"boarding_status\":[\"=\",\"Pending\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Employee Grievance",
+   "link_to": "Employee Grievance",
+   "stats_filter": "{\"status\":[\"=\",\"Open\"]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "Employee Lifecycle"
+}

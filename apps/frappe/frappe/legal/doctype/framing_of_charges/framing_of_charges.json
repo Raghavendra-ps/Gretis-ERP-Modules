@@ -1,0 +1,472 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:39:09.303946",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "case_title",
+  "case_number_issued_by_court",
+  "framing_of_issues_section",
+  "charges_framing_date",
+  "court_hearing_date",
+  "court_observations_on_charges",
+  "plaintiff_tab",
+  "plaintiff",
+  "through",
+  "plaintiff_address",
+  "plaintiff_phone",
+  "plaintiff_charges_as_framed_by_the_court",
+  "plaintiff_prospective",
+  "plaintiff_details_section",
+  "plaintiff_1",
+  "through_1",
+  "address_1",
+  "phone_1",
+  "plaintiff_2",
+  "through_2",
+  "address_2",
+  "phone_2",
+  "column_break_so9ij",
+  "plaintiff_3",
+  "through3",
+  "address_3",
+  "phone_3",
+  "plaintiff_4",
+  "through_4",
+  "address_4",
+  "phone_4",
+  "plaintiff_5",
+  "through5",
+  "address_5",
+  "phone_5",
+  "defendant_tab",
+  "defendant_name",
+  "address",
+  "phone",
+  "defendant_detailed_list_of_the_charges",
+  "defendant_prospective",
+  "section_break_yprvj",
+  "defendant_1",
+  "through1",
+  "address1",
+  "phone1",
+  "defendant_2",
+  "through2",
+  "address2",
+  "phone2",
+  "column_break_46utc",
+  "defendant_3",
+  "through_3",
+  "address3",
+  "phone3",
+  "defendant_4",
+  "through4",
+  "address4",
+  "phone4",
+  "column_break_gwdlc",
+  "defendant_5",
+  "throuh5",
+  "address5",
+  "phone5",
+  "defendant_6",
+  "through6",
+  "address6",
+  "phone6",
+  "column_break_qg96m"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Case Documentation"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fetch_from": "details.case_number_issued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "framing_of_issues_section",
+   "fieldtype": "Section Break",
+   "label": "Framing of Issues"
+  },
+  {
+   "fieldname": "charges_framing_date",
+   "fieldtype": "Date",
+   "label": "Charges Framing Date"
+  },
+  {
+   "fieldname": "court_hearing_date",
+   "fieldtype": "Table",
+   "label": "Court Hearing Date",
+   "options": "Court Hearing Dates"
+  },
+  {
+   "fieldname": "court_observations_on_charges",
+   "fieldtype": "Text Editor",
+   "label": "Court Observations on Charges"
+  },
+  {
+   "fieldname": "plaintiff_tab",
+   "fieldtype": "Tab Break",
+   "label": "Plaintiff"
+  },
+  {
+   "fieldname": "plaintiff",
+   "fieldtype": "Link",
+   "label": "Plaintiff ",
+   "options": "Plaint Details"
+  },
+  {
+   "fieldname": "through",
+   "fieldtype": "Data",
+   "label": "Through"
+  },
+  {
+   "fieldname": "plaintiff_address",
+   "fieldtype": "Data",
+   "label": "Plaintiff Address"
+  },
+  {
+   "fieldname": "plaintiff_phone",
+   "fieldtype": "Data",
+   "label": "Plaintiff Phone"
+  },
+  {
+   "fieldname": "plaintiff_charges_as_framed_by_the_court",
+   "fieldtype": "Table",
+   "label": "Plaintiff Charges as framed by the court",
+   "options": "Plaintiff Detailed list of the Charges"
+  },
+  {
+   "fieldname": "plaintiff_prospective",
+   "fieldtype": "Text Editor",
+   "label": "Plaintiff Prospective"
+  },
+  {
+   "fieldname": "plaintiff_details_section",
+   "fieldtype": "Section Break",
+   "label": "Plaintiff Details"
+  },
+  {
+   "fieldname": "plaintiff_1",
+   "fieldtype": "Link",
+   "label": "Plaintiff 1",
+   "options": "Plaintiff 1"
+  },
+  {
+   "fieldname": "through_1",
+   "fieldtype": "Data",
+   "label": "Through 1"
+  },
+  {
+   "fieldname": "address_1",
+   "fieldtype": "Data",
+   "label": "Address 1"
+  },
+  {
+   "fieldname": "phone_1",
+   "fieldtype": "Data",
+   "label": "Phone 1"
+  },
+  {
+   "fieldname": "plaintiff_2",
+   "fieldtype": "Link",
+   "label": "Plaintiff 2",
+   "options": "Plaintiff 2"
+  },
+  {
+   "fieldname": "through_2",
+   "fieldtype": "Data",
+   "label": "Through 2"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Data",
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "phone_2",
+   "fieldtype": "Data",
+   "label": "Phone 2"
+  },
+  {
+   "fieldname": "column_break_so9ij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plaintiff_3",
+   "fieldtype": "Link",
+   "label": "Plaintiff 3",
+   "options": "Plaintiff 3"
+  },
+  {
+   "fieldname": "through3",
+   "fieldtype": "Data",
+   "label": "Through3"
+  },
+  {
+   "fieldname": "address_3",
+   "fieldtype": "Data",
+   "label": "Address 3"
+  },
+  {
+   "fieldname": "phone_3",
+   "fieldtype": "Data",
+   "label": "Phone 3"
+  },
+  {
+   "fieldname": "plaintiff_4",
+   "fieldtype": "Link",
+   "label": "Plaintiff 4",
+   "options": "Plaintiff 4"
+  },
+  {
+   "fieldname": "through_4",
+   "fieldtype": "Data",
+   "label": "Through 4"
+  },
+  {
+   "fieldname": "address_4",
+   "fieldtype": "Data",
+   "label": "Address 4"
+  },
+  {
+   "fieldname": "phone_4",
+   "fieldtype": "Data",
+   "label": "Phone 4"
+  },
+  {
+   "fieldname": "plaintiff_5",
+   "fieldtype": "Link",
+   "label": "Plaintiff 5",
+   "options": "Plaintiff 5"
+  },
+  {
+   "fieldname": "through5",
+   "fieldtype": "Data",
+   "label": "Through5"
+  },
+  {
+   "fieldname": "address_5",
+   "fieldtype": "Data",
+   "label": "Address 5"
+  },
+  {
+   "fieldname": "phone_5",
+   "fieldtype": "Data",
+   "label": "Phone 5"
+  },
+  {
+   "fieldname": "defendant_tab",
+   "fieldtype": "Tab Break",
+   "label": "Defendant"
+  },
+  {
+   "fieldname": "defendant_name",
+   "fieldtype": "Link",
+   "label": "Defendant Name",
+   "options": "Defendant Master"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "defendant_detailed_list_of_the_charges",
+   "fieldtype": "Table",
+   "label": "Defendant Detailed list of the Charges",
+   "options": "Defendant Detailed list of the Charges"
+  },
+  {
+   "fieldname": "defendant_prospective",
+   "fieldtype": "Text Editor",
+   "label": "Defendant Prospective"
+  },
+  {
+   "fieldname": "section_break_yprvj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "defendant_1",
+   "fieldtype": "Link",
+   "label": "Defendant 1",
+   "options": "Defendant 1"
+  },
+  {
+   "fieldname": "through1",
+   "fieldtype": "Data",
+   "label": "Through1"
+  },
+  {
+   "fieldname": "address1",
+   "fieldtype": "Data",
+   "label": "Address1"
+  },
+  {
+   "fieldname": "phone1",
+   "fieldtype": "Data",
+   "label": "Phone1"
+  },
+  {
+   "fieldname": "defendant_2",
+   "fieldtype": "Link",
+   "label": "Defendant 2",
+   "options": "Defendant 2"
+  },
+  {
+   "fieldname": "through2",
+   "fieldtype": "Data",
+   "label": "Through2"
+  },
+  {
+   "fieldname": "address2",
+   "fieldtype": "Data",
+   "label": "Address2"
+  },
+  {
+   "fieldname": "phone2",
+   "fieldtype": "Data",
+   "label": "Phone2"
+  },
+  {
+   "fieldname": "column_break_46utc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defendant_3",
+   "fieldtype": "Link",
+   "label": "Defendant 3",
+   "options": "Defendant 3"
+  },
+  {
+   "fieldname": "through_3",
+   "fieldtype": "Data",
+   "label": "Through_3"
+  },
+  {
+   "fieldname": "address3",
+   "fieldtype": "Data",
+   "label": "Address3"
+  },
+  {
+   "fieldname": "phone3",
+   "fieldtype": "Data",
+   "label": "Phone3"
+  },
+  {
+   "fieldname": "defendant_4",
+   "fieldtype": "Link",
+   "label": "Defendant 4",
+   "options": "Defendant 4"
+  },
+  {
+   "fieldname": "through4",
+   "fieldtype": "Data",
+   "label": "Through4"
+  },
+  {
+   "fieldname": "address4",
+   "fieldtype": "Data",
+   "label": "Address4"
+  },
+  {
+   "fieldname": "phone4",
+   "fieldtype": "Data",
+   "label": "Phone4"
+  },
+  {
+   "fieldname": "column_break_gwdlc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defendant_5",
+   "fieldtype": "Link",
+   "label": "Defendant 5",
+   "options": "Defendant 5"
+  },
+  {
+   "fieldname": "throuh5",
+   "fieldtype": "Data",
+   "label": "Throuh5"
+  },
+  {
+   "fieldname": "address5",
+   "fieldtype": "Data",
+   "label": "Address5"
+  },
+  {
+   "fieldname": "phone5",
+   "fieldtype": "Data",
+   "label": "Phone5"
+  },
+  {
+   "fieldname": "defendant_6",
+   "fieldtype": "Link",
+   "label": "Defendant 6",
+   "options": "Defendant 6"
+  },
+  {
+   "fieldname": "through6",
+   "fieldtype": "Data",
+   "label": "Through6"
+  },
+  {
+   "fieldname": "address6",
+   "fieldtype": "Data",
+   "label": "Address6"
+  },
+  {
+   "fieldname": "phone6",
+   "fieldtype": "Data",
+   "label": "Phone6"
+  },
+  {
+   "fieldname": "column_break_qg96m",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-24 16:26:39.507407",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Framing of Charges",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title"
+}

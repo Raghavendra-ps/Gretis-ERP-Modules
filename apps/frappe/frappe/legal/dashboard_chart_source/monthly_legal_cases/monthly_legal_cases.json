@@ -1,0 +1,13 @@
+{
+ "creation": "2025-01-10 15:54:23.382837",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2025-01-10 15:54:23.382837",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Monthly Legal Cases",
+ "owner": "Administrator",
+ "source_name": "Monthly Legal Cases",
+ "timeseries": 1
+}

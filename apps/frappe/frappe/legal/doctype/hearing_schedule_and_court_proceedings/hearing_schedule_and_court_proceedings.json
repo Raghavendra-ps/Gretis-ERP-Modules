@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 13:49:40.622324",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_documentation",
+  "section_break_1e5bt",
+  "case_title",
+  "case_number_issued_by_court",
+  "column_break_vkx3z",
+  "court_name",
+  "presiding_judge",
+  "section_break_vcqqb",
+  "court_hearing_dates",
+  "hearing_notes",
+  "section_break_7ncjb",
+  "column_break_llbmh",
+  "title",
+  "next_hearing_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "column_break_vkx3z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_title.court_name",
+   "fieldname": "court_name",
+   "fieldtype": "Data",
+   "label": "Court Name"
+  },
+  {
+   "fieldname": "presiding_judge",
+   "fieldtype": "Data",
+   "label": "Presiding Judge"
+  },
+  {
+   "fieldname": "section_break_vcqqb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hearing_notes",
+   "fieldtype": "Text",
+   "label": "Hearing Notes"
+  },
+  {
+   "fieldname": "column_break_llbmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "section_break_7ncjb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This Stage manages court hearing schedules and proceedings, allowing the company to stay updated on case progress.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_1e5bt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "court_hearing_dates",
+   "fieldtype": "Table",
+   "label": "Court Hearing Dates",
+   "options": "Court Hearing Dates"
+  },
+  {
+   "fieldname": "next_hearing_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Next Hearing Date"
+  }
+ ],
+ "icon": "fa fa-calendar",
+ "is_calendar_and_gantt": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-05-31 09:55:49.031389",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Hearing Schedule and Court Proceedings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

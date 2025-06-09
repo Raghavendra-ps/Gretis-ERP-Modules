@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:41:36.563921",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_title",
+  "case_number_issued_by_court",
+  "document_list",
+  "inspection_schedule",
+  "inspection_report",
+  "objections_if_any"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Initiation"
+  },
+  {
+   "fetch_from": "case_title.case_number_issued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "document_list",
+   "fieldtype": "Table",
+   "label": "Document List ",
+   "options": "List of Documents"
+  },
+  {
+   "fieldname": "inspection_schedule",
+   "fieldtype": "Date",
+   "label": "Inspection Schedule"
+  },
+  {
+   "fieldname": "inspection_report",
+   "fieldtype": "Text Editor",
+   "label": "Inspection Report"
+  },
+  {
+   "fieldname": "objections_if_any",
+   "fieldtype": "Text Editor",
+   "label": "Objections if any"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:33.895349",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Evidence Discovery and Inspection Civil",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

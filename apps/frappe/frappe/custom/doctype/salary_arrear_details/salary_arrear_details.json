@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-21 16:21:19.262244",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "old_salary",
+  "revised_salary",
+  "effective_date_old_salary",
+  "effective_date_revised_salary",
+  "days_between_dates",
+  "total_arrear_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "old_salary",
+   "fieldtype": "Currency",
+   "label": "Old Salary"
+  },
+  {
+   "fieldname": "revised_salary",
+   "fieldtype": "Currency",
+   "label": "Revised Salary"
+  },
+  {
+   "fieldname": "effective_date_old_salary",
+   "fieldtype": "Date",
+   "label": "Effective Date (Old Salary)"
+  },
+  {
+   "fieldname": "effective_date_revised_salary",
+   "fieldtype": "Date",
+   "label": "Effective Date (Revised Salary)"
+  },
+  {
+   "fieldname": "days_between_dates",
+   "fieldtype": "Int",
+   "label": "Days Between Dates"
+  },
+  {
+   "fieldname": "total_arrear_amount",
+   "fieldtype": "Currency",
+   "label": "Total Arrear Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-21 17:01:22.025813",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Salary Arrear Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

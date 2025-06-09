@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 16:41:29.281838",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_role_selection",
+  "case_documentation",
+  "case_details_section",
+  "case_title",
+  "filing_department",
+  "court_name",
+  "column_break_k0q7m",
+  "case_numberissued_by_court",
+  "assigned_advocate",
+  "priority_level",
+  "column_break_qdlvi",
+  "filing_date",
+  "case_status",
+  "case_type",
+  "section_break_lv1mg",
+  "parties_involved",
+  "section_break_ryl1t",
+  "case_description",
+  "column_break_sax26",
+  "related_documents",
+  "section_break_vyhxd",
+  "preview",
+  "approval_section",
+  "initiating_employee",
+  "approval_status",
+  "column_break_ee6ah",
+  "approval_date",
+  "section_break_5fdvw",
+  "approval_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "case_numberissued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number(issued by court)"
+  },
+  {
+   "fieldname": "case_description",
+   "fieldtype": "Text Editor",
+   "label": "Case Description"
+  },
+  {
+   "fieldname": "parties_involved",
+   "fieldtype": "Table",
+   "label": "Parties Involved ",
+   "options": "Litigants"
+  },
+  {
+   "fieldname": "assigned_advocate",
+   "fieldtype": "Link",
+   "label": "Assigned Advocate",
+   "options": "Advocate Master"
+  },
+  {
+   "fieldname": "column_break_sax26",
+   "fieldtype": "Section Break",
+   "label": "Document Preview"
+  },
+  {
+   "fieldname": "filing_department",
+   "fieldtype": "Link",
+   "label": "Filing Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "filing_date",
+   "fieldtype": "Date",
+   "label": "Filing Date"
+  },
+  {
+   "fieldname": "priority_level",
+   "fieldtype": "Select",
+   "label": "Priority Level",
+   "options": "\nHigh\nMedium\nLow"
+  },
+  {
+   "fieldname": "case_status",
+   "fieldtype": "Select",
+   "label": "Case Status",
+   "options": "\nActive\nClosed\nPending\nDismissed"
+  },
+  {
+   "fieldname": "related_documents",
+   "fieldtype": "Attach",
+   "label": "Related Documents"
+  },
+  {
+   "fieldname": "section_break_lv1mg",
+   "fieldtype": "Section Break",
+   "label": "Litigants"
+  },
+  {
+   "fieldname": "section_break_ryl1t",
+   "fieldtype": "Section Break",
+   "label": "Case Overview"
+  },
+  {
+   "fieldname": "column_break_k0q7m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qdlvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "HTML",
+   "label": "Preview"
+  },
+  {
+   "fieldname": "section_break_vyhxd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This Stage serves as the primary module to manage and track all legal cases handled by the company. It centralizes the essential details of each case for structured management.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Link",
+   "label": "Court Name",
+   "options": "Court Master"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "initiating_employee",
+   "fieldtype": "Link",
+   "label": "Initiating Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "options": "\nPending\nApproved\nRejected"
+  },
+  {
+   "fieldname": "column_break_ee6ah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "section_break_5fdvw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approval_notes",
+   "fieldtype": "Text Editor",
+   "label": "Approval Notes"
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Select",
+   "label": "Case Type",
+   "options": "\nCivil\nCompliance\nOthers"
+  },
+  {
+   "fieldname": "case_role_selection",
+   "fieldtype": "Select",
+   "label": "Case Role Selection",
+   "options": "\nCase Filed\nSummons Received"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-06-05 17:23:44.359433",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Case Documentation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title"
+}

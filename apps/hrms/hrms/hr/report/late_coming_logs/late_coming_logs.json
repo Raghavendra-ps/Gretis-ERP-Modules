@@ -1,0 +1,59 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "Status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "width": 0
+  }
+ ],
+ "creation": "2024-04-04 13:25:54.350819",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "Checkin Time",
+   "fieldtype": "Datetime",
+   "label": "Date Range",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "Employee Name",
+   "fieldtype": "Link",
+   "label": "Employee ",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "Log Type",
+   "fieldtype": "Select",
+   "label": "Log Type",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": "Gretis Letter Head",
+ "modified": "2024-04-07 11:28:30.270892",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Late Coming Logs",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Employee Checkin",
+ "report_name": "Late Coming Logs",
+ "report_script": "# Import necessary modules\r\nimport frappe\r\nfrom datetime import datetime\r\n\r\ndef filter_late_comings():\r\n    # Define the late coming threshold time (e.g., 9:40 AM)\r\n    late_coming_time = datetime.strptime(\"09:40\", \"%H:%M\")\r\n\r\n    # Query Time Log entries for late comings after 9:40 AM\r\n    late_comings = frappe.db.sql(\"\"\"\r\n        SELECT employee, checkin_time\r\n        FROM `tabTime Log`\r\n        WHERE log_type = 'IN'\r\n        AND TIME(checkin_time) > %(late_coming_time)s\r\n        \"\"\", {\"late_coming_time\": late_coming_time.time()}, as_dict=True)\r\n\r\n    # Process late comings\r\n    for late_coming in late_comings:\r\n        employee = late_coming.get(\"employee\")\r\n        checkin_time = late_coming.get(\"checkin_time\")\r\n        # Do something with the late coming data, e.g., send notifications, log details, etc.\r\n        # Example: print late coming details\r\n        print(f\"Employee {employee} checked in late at {checkin_time}\")\r\n\r\n    # Optional: Return or log the late coming data for further processing or analysis\r\n    return late_comings\r\n\r\n# Call the function to filter late comings\r\nfilter_late_comings()\r\n",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

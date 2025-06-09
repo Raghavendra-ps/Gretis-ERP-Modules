@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-22 11:00:45.635667",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "arrear_period_from",
+  "column_break_bue0o",
+  "arrear_period_to",
+  "column_break_z2pjy",
+  "total_days",
+  "column_break_rfilo",
+  "month_difference",
+  "column_break_rvhon",
+  "state",
+  "column_break_ok9cj",
+  "month_from",
+  "column_break_vgjvx",
+  "month_to",
+  "column_break_mcual",
+  "attachment",
+  "section_break_fnfuv",
+  "wage_info",
+  "section_break_wngrq",
+  "company",
+  "employee_list",
+  "section_break_1u5rq"
+ ],
+ "fields": [
+  {
+   "fieldname": "arrear_period_from",
+   "fieldtype": "Date",
+   "label": "Arrear Period From"
+  },
+  {
+   "fieldname": "arrear_period_to",
+   "fieldtype": "Date",
+   "label": "Arrear Period To"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "employee_list",
+   "fieldtype": "Table",
+   "label": "Employee List",
+   "options": "Employee List"
+  },
+  {
+   "fieldname": "column_break_rvhon",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_wngrq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bue0o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1u5rq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_z2pjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Float",
+   "label": "Total Days"
+  },
+  {
+   "fieldname": "column_break_rfilo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_difference",
+   "fieldtype": "Float",
+   "label": "Month Difference"
+  },
+  {
+   "fieldname": "wage_info",
+   "fieldtype": "Table",
+   "label": "Wages List",
+   "options": "Wage Info"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State Master"
+  },
+  {
+   "fetch_from": "state.month_from",
+   "fieldname": "month_from",
+   "fieldtype": "Data",
+   "label": "Month From"
+  },
+  {
+   "fetch_from": "state.month_to",
+   "fieldname": "month_to",
+   "fieldtype": "Data",
+   "label": "Month To"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_ok9cj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vgjvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mcual",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fnfuv",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-20 10:05:31.376698",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Employee Arrears",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

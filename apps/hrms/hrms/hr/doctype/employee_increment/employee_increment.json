@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-07 13:21:33.873021",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "increment_details_section",
+  "employee",
+  "increment_applicable_from",
+  "increment_percentage",
+  "column_break_qg6o5",
+  "increment_amount",
+  "revised_salary_after_increment",
+  "column_break_an5xe",
+  "amended_from",
+  "employee_full_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "increment_applicable_from",
+   "fieldtype": "Date",
+   "label": "Increment Applicable From"
+  },
+  {
+   "fieldname": "increment_percentage",
+   "fieldtype": "Percent",
+   "label": "Increment Percentage"
+  },
+  {
+   "fieldname": "increment_amount",
+   "fieldtype": "Currency",
+   "label": "Increment Amount"
+  },
+  {
+   "fieldname": "revised_salary_after_increment",
+   "fieldtype": "Currency",
+   "label": "Revised Salary After Increment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Increment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qg6o5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_an5xe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Full Name"
+  },
+  {
+   "fieldname": "increment_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Increment Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-22 11:00:39.717634",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Increment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_full_name"
+}

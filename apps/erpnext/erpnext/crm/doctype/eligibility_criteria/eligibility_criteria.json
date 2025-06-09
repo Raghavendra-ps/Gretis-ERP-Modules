@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-23 15:17:18.479856",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "eligibility_criteria",
+  "qualified"
+ ],
+ "fields": [
+  {
+   "fieldname": "eligibility_criteria",
+   "fieldtype": "Data",
+   "label": "Eligibility Criteria"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "Select for Yes\nUnselect for No",
+   "fieldname": "qualified",
+   "fieldtype": "Check",
+   "label": "Qualified"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-23 15:43:51.174701",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Eligibility Criteria",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

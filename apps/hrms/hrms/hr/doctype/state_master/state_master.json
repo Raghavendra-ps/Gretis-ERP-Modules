@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-02-20 09:52:04.203078",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "state",
+  "column_break_1cwea",
+  "month_from",
+  "column_break_t2nm0",
+  "month_to",
+  "section_break_qkgdr",
+  "wage_info",
+  "section_break_84myr",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nPunjab Min Wages\nHaryana Min Wages\nChandigarh Min Wages"
+  },
+  {
+   "fieldname": "month_from",
+   "fieldtype": "Date",
+   "label": "Month From"
+  },
+  {
+   "fieldname": "month_to",
+   "fieldtype": "Date",
+   "label": "Month To"
+  },
+  {
+   "fieldname": "wage_info",
+   "fieldtype": "Table",
+   "label": "Wage Info",
+   "options": "Wage Info"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_1cwea",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_t2nm0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qkgdr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_84myr",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-20 10:54:33.802340",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "State Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "state"
+}

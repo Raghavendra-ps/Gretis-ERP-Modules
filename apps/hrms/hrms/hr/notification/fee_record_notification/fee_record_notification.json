@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2024-04-23 17:27:45.112063",
+ "date_changed": "date_of_submission",
+ "days_in_advance": 15,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Fee Record",
+ "enabled": 1,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2024-04-23 17:27:45.112063",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Fee Record Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "GM OPS"
+  },
+  {
+   "receiver_by_role": "CEO"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Joining",
+ "sender_email": "joining@gretisindia.com",
+ "subject": "Fee Records"
+}

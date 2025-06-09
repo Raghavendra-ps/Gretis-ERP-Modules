@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 16:04:25.352523",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "case_title",
+  "case_number",
+  "the_accused_pleads_guilty_or_opts_for_that"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "label": "Case Number"
+  },
+  {
+   "fieldname": "the_accused_pleads_guilty_or_opts_for_that",
+   "fieldtype": "Text Editor",
+   "label": "The accused pleads Guilty or opts for that"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:31.949521",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Plea or Guilty or Trial Criminal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title"
+}

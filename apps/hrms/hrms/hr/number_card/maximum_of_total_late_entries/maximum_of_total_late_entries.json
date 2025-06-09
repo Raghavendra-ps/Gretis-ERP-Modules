@@ -1,0 +1,22 @@
+{
+ "creation": "2024-03-28 16:51:48.128883",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"month\":\"3\",\"year\":\"2024\",\"company\":\"Gretis India Pvt Ltd\",\"summarized_view\":1}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Maximum of Total_late_entries",
+ "modified": "2024-03-28 17:03:27.353334",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Maximum of Total_late_entries",
+ "owner": "Administrator",
+ "report_field": "total_late_entries",
+ "report_function": "Maximum",
+ "report_name": "Monthly Attendance Sheet",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

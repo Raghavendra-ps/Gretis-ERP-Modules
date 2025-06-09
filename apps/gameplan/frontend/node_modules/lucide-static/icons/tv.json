@@ -1,0 +1,15 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "colebemis",
+    "ericfennis"
+  ],
+  "tags": [
+    "television",
+    "stream"
+  ],
+  "categories": [
+    "devices",
+    "multimedia"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-20 13:15:28.580446",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month_range_start",
+  "month_range_end",
+  "employee_arrear_calculation"
+ ],
+ "fields": [
+  {
+   "fieldname": "month_range_start",
+   "fieldtype": "Date",
+   "label": "Month Range Start"
+  },
+  {
+   "fieldname": "month_range_end",
+   "fieldtype": "Date",
+   "label": "Month Range End"
+  },
+  {
+   "fieldname": "employee_arrear_calculation",
+   "fieldtype": "Table",
+   "label": "Employee Arrear Calculation",
+   "options": "Employee Arrear Calculation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-20 13:32:41.227910",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Arrear Calculation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

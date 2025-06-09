@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-22 17:25:37.763425",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_client_and_designation",
+  "time_of_meeting",
+  "point_of_discussion",
+  "mobile_number",
+  "type_of_manpower",
+  "already_outsourcing",
+  "remarks",
+  "name_of_company",
+  "outsourcing_rates"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_client_and_designation",
+   "fieldtype": "Data",
+   "label": "Name of Client and Designation"
+  },
+  {
+   "fieldname": "time_of_meeting",
+   "fieldtype": "Datetime",
+   "label": "Time of Meeting"
+  },
+  {
+   "fieldname": "point_of_discussion",
+   "fieldtype": "Data",
+   "label": "Point of Discussion"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "type_of_manpower",
+   "fieldtype": "Select",
+   "label": "Type of Manpower",
+   "options": "\nHousekeeping\nGeneral\nSecurity\nOthers"
+  },
+  {
+   "fieldname": "already_outsourcing",
+   "fieldtype": "Select",
+   "label": "Already outsourcing",
+   "options": "\nName of company\nAt what Rates"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "name_of_company",
+   "fieldtype": "Data",
+   "label": "Name of Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "outsourcing_rates",
+   "fieldtype": "Data",
+   "label": "Outsourcing Rates",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-23 13:02:00.954714",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Sales Meeting KRA Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

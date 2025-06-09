@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-07 12:20:24.506474",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_type_section",
+  "desktopcpu",
+  "mouse",
+  "keyoard",
+  "ups",
+  "laptop"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_type_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "desktopcpu",
+   "fieldtype": "Check",
+   "label": "Desktop/CPU",
+   "options": "\nWorking\nNot Working"
+  },
+  {
+   "default": "0",
+   "fieldname": "mouse",
+   "fieldtype": "Check",
+   "label": "Mouse",
+   "options": "\nWorking\nNot Working"
+  },
+  {
+   "default": "0",
+   "fieldname": "keyoard",
+   "fieldtype": "Check",
+   "label": "Keyoard",
+   "options": "\nWorking\nNot Working"
+  },
+  {
+   "default": "0",
+   "fieldname": "ups",
+   "fieldtype": "Check",
+   "label": "UPS",
+   "options": "\nWorking\nNot Working"
+  },
+  {
+   "default": "0",
+   "fieldname": "laptop",
+   "fieldtype": "Check",
+   "label": "Laptop",
+   "options": "\nWorking\nNot Working"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-07 12:26:18.539967",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Asset Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

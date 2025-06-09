@@ -1,0 +1,300 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-20 15:11:53.018356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "index",
+  "column_break_olofv",
+  "bank_name",
+  "address",
+  "column_break_yatht",
+  "bg_amount",
+  "bank_contact_person",
+  "column_break_4g7gk",
+  "bg_amount_in_words",
+  "department_name",
+  "bg_details_section",
+  "bg_id",
+  "validity_start_date",
+  "tenderer_address",
+  "invocation_date",
+  "column_break_mocnt",
+  "related_tender",
+  "validity_end_date",
+  "claim_expiry_date",
+  "invocation_status",
+  "column_break_9u3li",
+  "bg_application_date",
+  "bg_submission_date",
+  "renewal_date",
+  "bg_received_date",
+  "column_break_f2kdi",
+  "required_docs",
+  "bg_status",
+  "release_date",
+  "bg_amount_status",
+  "section_break_ql8w0",
+  "tenderer",
+  "tenderer_email_address",
+  "column_break_vbrmv",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "bg_details_section",
+   "fieldtype": "Section Break",
+   "label": "BG Details"
+  },
+  {
+   "fieldname": "bg_id",
+   "fieldtype": "Data",
+   "label": "BG ID"
+  },
+  {
+   "fieldname": "related_tender",
+   "fieldtype": "Link",
+   "label": "Related Tender",
+   "options": "Tender Notification"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank"
+  },
+  {
+   "fetch_from": "bank_name.bank_contact_person",
+   "fieldname": "bank_contact_person",
+   "fieldtype": "Data",
+   "label": "Bank Contact Person"
+  },
+  {
+   "fieldname": "bg_application_date",
+   "fieldtype": "Date",
+   "label": "BG Application Date"
+  },
+  {
+   "fieldname": "validity_start_date",
+   "fieldtype": "Date",
+   "label": "Validity Start Date"
+  },
+  {
+   "fieldname": "validity_end_date",
+   "fieldtype": "Date",
+   "label": "Validity End Date"
+  },
+  {
+   "fieldname": "renewal_date",
+   "fieldtype": "Date",
+   "label": "Renewal Date"
+  },
+  {
+   "fieldname": "bg_status",
+   "fieldtype": "Select",
+   "label": "BG Status",
+   "options": "\nPending\nApproved\nRejected\nRenewed\nClosed"
+  },
+  {
+   "fieldname": "invocation_status",
+   "fieldtype": "Select",
+   "label": "Invocation Status",
+   "options": "\nInvoked\nNot Invoked"
+  },
+  {
+   "fieldname": "invocation_date",
+   "fieldtype": "Date",
+   "label": "Invocation Date"
+  },
+  {
+   "fieldname": "release_date",
+   "fieldtype": "Date",
+   "label": "Release Date"
+  },
+  {
+   "fieldname": "column_break_yatht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4g7gk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_olofv",
+   "fieldtype": "Section Break",
+   "label": "Banking Details"
+  },
+  {
+   "fieldname": "bg_amount",
+   "fieldtype": "Currency",
+   "label": "BG Amount"
+  },
+  {
+   "fetch_from": "related_tender.tenderer",
+   "fieldname": "tenderer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tenderer"
+  },
+  {
+   "fetch_from": "related_tender.tenderer_address",
+   "fieldname": "tenderer_address",
+   "fieldtype": "Data",
+   "label": "Tenderer Address"
+  },
+  {
+   "fieldname": "bg_amount_in_words",
+   "fieldtype": "Data",
+   "label": "BG Amount in Words"
+  },
+  {
+   "fieldname": "required_docs",
+   "fieldtype": "Data",
+   "label": "Required Docs"
+  },
+  {
+   "fieldname": "column_break_mocnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ql8w0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9u3li",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_f2kdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bg_submission_date",
+   "fieldtype": "Date",
+   "label": "BG Submission Date"
+  },
+  {
+   "fieldname": "claim_expiry_date",
+   "fieldtype": "Date",
+   "label": "Claim Expiry Date"
+  },
+  {
+   "fetch_from": "bank_name.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Bank Address"
+  },
+  {
+   "fieldname": "bg_received_date",
+   "fieldtype": "Date",
+   "label": "BG Received Date"
+  },
+  {
+   "fieldname": "bg_amount_status",
+   "fieldtype": "Select",
+   "label": "BG Amount Status",
+   "options": "\nReceived\nNot Received"
+  },
+  {
+   "fetch_from": "related_tender.tenderer_email",
+   "fieldname": "tenderer_email_address",
+   "fieldtype": "Data",
+   "label": "Tenderer Email Address"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bank Guarantee Management",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name"
+  },
+  {
+   "fieldname": "index",
+   "fieldtype": "HTML",
+   "label": "Index",
+   "options": "<div style=\"background-color: #d9f1ff; padding: 10px; border-radius: 5px;\">\n    <p><strong>Related Tender:</strong> This field fetches all the relevant data from the <em>Tender Notification</em> automatically. When you select a tender, the associated details will be populated based on the tender notification.</p>\n    \n    <p><strong>Department Name:</strong> This field is for manual entries and is not fetched from the <em>Tender Notification</em>. Please enter the department name manually as needed.</p>\n</div>\n"
+  },
+  {
+   "fieldname": "column_break_vbrmv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Tender Notification",
+   "link_fieldname": "tenderer"
+  },
+  {
+   "link_doctype": "Pre-bid Meeting",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tech and Fin",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "EMD Management",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "ATC",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Opening and Evaluation Details",
+   "link_fieldname": "related_submission"
+  },
+  {
+   "link_doctype": "Tender Contract Signing and Execution",
+   "link_fieldname": "related_notification"
+  }
+ ],
+ "modified": "2025-05-07 11:51:44.644455",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Bank Guarantee Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "department_name"
+}

@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 14:59:09.384730",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_documentation",
+  "section_break_87xt3",
+  "case_title",
+  "column_break_ufy34",
+  "case_numberissued_by_court",
+  "section_break_fdeo4",
+  "order_reference",
+  "section_break_szlxn",
+  "task_details",
+  "section_break_4ipgo",
+  "deadline",
+  "section_break_focjt",
+  "final_order_attachment",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_numberissued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number(issued by court)"
+  },
+  {
+   "fieldname": "section_break_fdeo4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_reference",
+   "fieldtype": "Text Editor",
+   "label": "Order Reference"
+  },
+  {
+   "fieldname": "section_break_szlxn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_details",
+   "fieldtype": "Text Editor",
+   "label": "Task Details"
+  },
+  {
+   "fieldname": "deadline",
+   "fieldtype": "Date",
+   "label": "Deadline"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This stage ensures that all court orders, settlements, or compliance requirements are properly implemented.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_87xt3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_order_attachment",
+   "fieldtype": "Attach",
+   "label": "Final Order Attachment"
+  },
+  {
+   "fieldname": "column_break_ufy34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4ipgo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_focjt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-01-03 17:07:48.735345",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Compliance and Implementation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

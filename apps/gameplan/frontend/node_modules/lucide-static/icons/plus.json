@@ -1,0 +1,21 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "colebemis",
+    "ericfennis"
+  ],
+  "tags": [
+    "add",
+    "new",
+    "maths",
+    "operator",
+    "join",
+    "concatenate",
+    "code",
+    "+"
+  ],
+  "categories": [
+    "maths",
+    "development"
+  ]
+}

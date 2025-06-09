@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-05 16:34:44.577536",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctype_description",
+  "case_details_section",
+  "case_title",
+  "column_break_whyh6",
+  "case_number_issued_by_court",
+  "column_break_dekyl",
+  "date_of_incident",
+  "section_break_d8e0g",
+  "incident_description",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctype_description",
+   "fieldtype": "HTML",
+   "label": "Doctype Description",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This Docment manages the initial filing and registration of cases within the company. It ensures all necessary details are captured at the outset and tracks the approval process within the corporate structure.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details "
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fieldname": "column_break_whyh6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "column_break_dekyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_title.filing_date",
+   "fieldname": "date_of_incident",
+   "fieldtype": "Date",
+   "label": "Date of Incident"
+  },
+  {
+   "fieldname": "section_break_d8e0g",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "case_title.case_description",
+   "fieldname": "incident_description",
+   "fieldtype": "Text Editor",
+   "label": "Incident Description"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-06-05 16:34:44.577536",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Case Initiation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

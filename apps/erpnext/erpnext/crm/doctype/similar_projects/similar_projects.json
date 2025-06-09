@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-23 15:11:44.213514",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "duration",
+  "duration_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Date",
+   "label": "Duration From"
+  },
+  {
+   "fieldname": "duration_to",
+   "fieldtype": "Date",
+   "label": "Duration To"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-23 16:22:05.799898",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Similar Projects",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

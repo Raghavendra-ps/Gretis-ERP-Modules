@@ -1,0 +1,19 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "colebemis"
+  ],
+  "tags": [
+    "arrow",
+    "caret",
+    "keyboard",
+    "key",
+    "mac",
+    "control",
+    "ctrl",
+    "button"
+  ],
+  "categories": [
+    "arrows"
+  ]
+}

@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-03-20 10:45:37.140784",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "goal",
+  "start_date",
+  "column_break_ffigy",
+  "end_date",
+  "column_break_ujovr",
+  "employee",
+  "column_break_6xcyn",
+  "department",
+  "column_break_2iylf",
+  "designation",
+  "column_break_sygt4",
+  "accounts_kra_table",
+  "section_break_85dct",
+  "tender_sales_kra_table",
+  "section_break_cnmas",
+  "statutory_kra_table",
+  "section_break_alks0",
+  "human_resources_kra_table",
+  "section_break_7txqq",
+  "payroll_kra_table",
+  "section_break_8wkjg",
+  "sales_meeting_kra_table",
+  "section_break_aonm8",
+  "frequency",
+  "target_date",
+  "column_break_4dy9z",
+  "status",
+  "progress",
+  "column_break_r88wb",
+  "remarks",
+  "employee_full_name",
+  "amended_from",
+  "progress_bar"
+ ],
+ "fields": [
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "\nDaily\nWeekly\nMonthly\nYearly"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nNot Started\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_sygt4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_r88wb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4dy9z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Full name"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_ujovr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "goal",
+   "fieldtype": "Link",
+   "label": "Goal",
+   "options": "Goal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily KRA Goals",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "progress_bar",
+   "fieldtype": "HTML",
+   "label": "Progress",
+   "read_only": 1,
+   "read_only_depends_on": "\n"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Float",
+   "label": "Progress (%)"
+  },
+  {
+   "fieldname": "accounts_kra_table",
+   "fieldtype": "Table",
+   "label": "Accounts KRA Table",
+   "options": "Accounts KRA Table"
+  },
+  {
+   "fieldname": "tender_sales_kra_table",
+   "fieldtype": "Table",
+   "label": "Tender Sales KRA Table",
+   "options": "Tender Sales KRA Table"
+  },
+  {
+   "fieldname": "statutory_kra_table",
+   "fieldtype": "Table",
+   "label": "Statutory KRA Table",
+   "options": "Statutory KRA Table"
+  },
+  {
+   "fieldname": "human_resources_kra_table",
+   "fieldtype": "Table",
+   "label": "Human Resources KRA Table",
+   "options": "Human Resources KRA Table"
+  },
+  {
+   "fieldname": "payroll_kra_table",
+   "fieldtype": "Table",
+   "label": "Payroll KRA Table",
+   "options": "Payroll KRA Table"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_85dct",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_cnmas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_alks0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_7txqq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8wkjg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ffigy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6xcyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2iylf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_meeting_kra_table",
+   "fieldtype": "Table",
+   "label": "Sales Meeting KRA Table",
+   "options": "Sales Meeting KRA Table"
+  },
+  {
+   "fieldname": "section_break_aonm8",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-23 11:35:52.420008",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Daily KRA Goals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_full_name",
+ "track_changes": 1
+}

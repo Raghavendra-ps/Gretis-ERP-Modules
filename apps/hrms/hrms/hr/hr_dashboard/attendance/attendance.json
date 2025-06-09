@@ -1,0 +1,63 @@
+{
+ "cards": [
+  {
+   "card": "Total Present (This Month)"
+  },
+  {
+   "card": "Total Absent (This Month)"
+  },
+  {
+   "card": "Late Entry (This Month)"
+  },
+  {
+   "card": "Early Exit (This Month)"
+  },
+  {
+   "card": "Maximum of Total_late_entries"
+  },
+  {
+   "card": "Late Entry (This Month)"
+  },
+  {
+   "card": "Maximum of Total_late_entries"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Attendance Count",
+   "width": "Full"
+  },
+  {
+   "chart": "Timesheet Activity Breakup",
+   "width": "Half"
+  },
+  {
+   "chart": "Shift Assignment Breakup",
+   "width": "Half"
+  },
+  {
+   "chart": "Department wise Timesheet Hours",
+   "width": "Full"
+  },
+  {
+   "chart": "Attendance Dashboard",
+   "width": "Half"
+  },
+  {
+   "chart": "Attendance Dashboard",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-08-21 14:13:18.835357",
+ "dashboard_name": "Attendance",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-03-28 17:00:32.850100",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Attendance",
+ "owner": "Administrator"
+}

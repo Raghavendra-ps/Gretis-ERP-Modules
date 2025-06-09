@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-26 17:43:43.721643",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "document_path",
+  "google_drive_link",
+  "doc_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Link",
+   "label": "Document Name",
+   "options": "Tender Document Master"
+  },
+  {
+   "fieldname": "google_drive_link",
+   "fieldtype": "Data",
+   "label": "Google Drive Link"
+  },
+  {
+   "fetch_from": "document_name.attach_doc",
+   "fieldname": "document_path",
+   "fieldtype": "Data",
+   "label": "Document Path"
+  },
+  {
+   "fetch_from": "document_name.document_name",
+   "fieldname": "doc_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Doc Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-14 15:24:18.673790",
+ "modified_by": "Administrator",
+ "module": "Integrations",
+ "name": "Google Drive Document Editing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "doc_name"
+}

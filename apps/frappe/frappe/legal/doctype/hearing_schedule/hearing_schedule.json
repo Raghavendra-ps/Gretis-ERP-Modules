@@ -1,0 +1,69 @@
+{
+ "_comments": "[]",
+ "_liked_by": "[]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-12 15:02:41.724471",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hearing_date",
+  "hearing_status",
+  "column_break_ltirh",
+  "stage_of_case",
+  "remarks",
+  "column_break_rgjzg",
+  "court_order_upload"
+ ],
+ "fields": [
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "label": "Hearing Date"
+  },
+  {
+   "fieldname": "stage_of_case",
+   "fieldtype": "Select",
+   "label": "Stage of Case",
+   "options": "\nCase Arguments\nEvidence\nJudgment\nCross-Examination"
+  },
+  {
+   "fieldname": "hearing_status",
+   "fieldtype": "Select",
+   "label": "Hearing Status",
+   "options": "\nCompleted\nAdjourned\nOngoing"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "court_order_upload",
+   "fieldtype": "Attach",
+   "label": "Court Order Upload"
+  },
+  {
+   "fieldname": "column_break_ltirh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rgjzg",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-14 14:58:02.177108",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Hearing Schedule",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

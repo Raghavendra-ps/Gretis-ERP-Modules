@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:54:06.371392",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "case_title",
+  "case_reference",
+  "re_examination_section",
+  "re_examination_details_specifics_of_re_examination",
+  "clarifications_sought",
+  "revised_testimony_updated_statement_from_witness"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "case_reference",
+   "fieldtype": "Data",
+   "label": "Case Reference"
+  },
+  {
+   "fieldname": "re_examination_section",
+   "fieldtype": "Section Break",
+   "label": "Re examination"
+  },
+  {
+   "fieldname": "re_examination_details_specifics_of_re_examination",
+   "fieldtype": "Text",
+   "label": "Re examination Details Specifics of Re Examination"
+  },
+  {
+   "fieldname": "clarifications_sought",
+   "fieldtype": "Text",
+   "label": "Clarifications Sought Area of Clarification or Additional Questioning"
+  },
+  {
+   "fieldname": "revised_testimony_updated_statement_from_witness",
+   "fieldtype": "Text",
+   "label": "Revised Testimony Updated statement from Witness"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:31.623316",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Re-examination",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

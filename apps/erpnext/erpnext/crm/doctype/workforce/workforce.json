@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-06 16:49:09.296750",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category_name",
+  "count_of_manpower"
+ ],
+ "fields": [
+  {
+   "fieldname": "count_of_manpower",
+   "fieldtype": "Data",
+   "label": "Count of Manpower"
+  },
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "label": "Category Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-23 16:58:20.509634",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Workforce",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "category_name"
+}

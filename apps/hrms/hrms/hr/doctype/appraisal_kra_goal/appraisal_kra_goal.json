@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-15 12:39:38.012936",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "goal",
+  "goal_name",
+  "description",
+  "progress",
+  "manager_rating",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "goal",
+   "fieldtype": "Link",
+   "label": "Goal",
+   "options": "Goal"
+  },
+  {
+   "fieldname": "goal_name",
+   "fieldtype": "Data",
+   "label": "Goal Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "label": "Progress"
+  },
+  {
+   "fieldname": "manager_rating",
+   "fieldtype": "Select",
+   "label": "Manager Rating",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-15 12:39:38.012936",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Appraisal KRA Goal",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

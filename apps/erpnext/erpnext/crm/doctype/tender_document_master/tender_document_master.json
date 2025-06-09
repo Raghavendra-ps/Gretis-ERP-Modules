@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-16 15:53:46.096890",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "attach_doc",
+  "description",
+  "doc_validity"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "attach_doc",
+   "fieldtype": "Attach",
+   "label": "Attach Doc"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "doc_validity",
+   "fieldtype": "Date",
+   "label": "Doc Validity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-12 17:36:22.761337",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Document Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "document_name"
+}

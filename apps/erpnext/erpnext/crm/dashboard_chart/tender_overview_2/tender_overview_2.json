@@ -1,0 +1,38 @@
+{
+ "chart_name": "Tender Overview-2",
+ "chart_type": "Report",
+ "creation": "2024-12-04 15:32:44.244517",
+ "custom_options": "{\"x_field\": \"tenderer_name\", \"chart_type\": \"Pie\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"emd_amount\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"tech_score\"}, {\"idx\": 3, \"__islocal\": true, \"name\": \"row 3\", \"y_field\": \"minimum_marks\"}], \"y_fields\": [\"emd_amount\", \"tech_score\", \"minimum_marks\"], \"colors\": [null, null, null]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2024-12-04 15:32:44.318159",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Overview-2",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Tender Overview",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Pie",
+ "use_report_chart": 0,
+ "x_field": "tenderer_name",
+ "y_axis": [
+  {
+   "y_field": "emd_amount"
+  },
+  {
+   "y_field": "tech_score"
+  },
+  {
+   "y_field": "minimum_marks"
+  }
+ ]
+}

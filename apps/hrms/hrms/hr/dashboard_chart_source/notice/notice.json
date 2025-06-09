@@ -1,0 +1,13 @@
+{
+ "creation": "2024-06-07 10:48:22.138168",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2024-06-07 10:48:22.138168",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Notice",
+ "owner": "Administrator",
+ "source_name": "Notice",
+ "timeseries": 0
+}

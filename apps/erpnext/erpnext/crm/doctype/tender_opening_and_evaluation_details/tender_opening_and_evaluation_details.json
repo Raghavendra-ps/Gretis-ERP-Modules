@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-12-19 11:20:24.958971",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "related_tender",
+  "column_break_gozds",
+  "retender",
+  "is_duplicate_created",
+  "tenderer",
+  "column_break_hbvwn",
+  "section_break_czbjp",
+  "tech_opening_date",
+  "section_break_ouxsj",
+  "technical_qualification",
+  "section_break_qpnnz",
+  "fin_opening_date",
+  "section_break_wr4kb",
+  "contract_period",
+  "section_break_5pnoi",
+  "competitor_details",
+  "column_break_9i84q",
+  "evaluator_section",
+  "evaluator_name",
+  "evaluation_status",
+  "column_break_uwymf",
+  "evaluators_email",
+  "column_break_y9wdk",
+  "evaluators_contact",
+  "section_break_ulrpq",
+  "additional_remarks",
+  "amended_from",
+  "result"
+ ],
+ "fields": [
+  {
+   "fieldname": "related_tender",
+   "fieldtype": "Link",
+   "label": "Related Tender",
+   "options": "Tender Notification"
+  },
+  {
+   "fetch_from": "related_tender.tenderer",
+   "fieldname": "tenderer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tenderer"
+  },
+  {
+   "fieldname": "column_break_hbvwn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_czbjp",
+   "fieldtype": "Section Break",
+   "label": "Technical Details"
+  },
+  {
+   "fieldname": "tech_opening_date",
+   "fieldtype": "Date",
+   "label": "Tech Opening Date"
+  },
+  {
+   "fieldname": "section_break_ouxsj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "technical_qualification",
+   "fieldtype": "Table",
+   "label": "Minimum Techno Commercial Score 65 percent ",
+   "options": "Technical Qualification"
+  },
+  {
+   "fieldname": "section_break_qpnnz",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "fin_opening_date",
+   "fieldtype": "Date",
+   "label": "Fin Opening Date"
+  },
+  {
+   "fieldname": "section_break_wr4kb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "related_tender.contract_period",
+   "fieldname": "contract_period",
+   "fieldtype": "Select",
+   "label": "Contract Period"
+  },
+  {
+   "fieldname": "section_break_5pnoi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "competitor_details",
+   "fieldtype": "Table",
+   "label": "Financial Details",
+   "options": "Competitor Details"
+  },
+  {
+   "fieldname": "column_break_9i84q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evaluator_section",
+   "fieldtype": "Section Break",
+   "label": "Evaluator"
+  },
+  {
+   "fieldname": "evaluator_name",
+   "fieldtype": "Data",
+   "label": "Evaluator Name"
+  },
+  {
+   "fieldname": "evaluation_status",
+   "fieldtype": "Select",
+   "label": "Evaluation Status",
+   "options": "\nApproved\nNot Approved\nPending"
+  },
+  {
+   "fieldname": "column_break_uwymf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluators_email",
+   "fieldtype": "Data",
+   "label": "Evaluators Email"
+  },
+  {
+   "fieldname": "column_break_y9wdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluators_contact",
+   "fieldtype": "Data",
+   "label": "Evaluators Contact "
+  },
+  {
+   "default": "0",
+   "fieldname": "retender",
+   "fieldtype": "Check",
+   "label": "Retender"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_duplicate_created",
+   "fieldtype": "Check",
+   "label": "Is Duplicate Created"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tender Opening and Evaluation Details",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gozds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ulrpq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_remarks",
+   "fieldtype": "Small Text",
+   "label": "Additional Remarks"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Result",
+   "options": "\nWon\nLost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Tender Notification",
+   "link_fieldname": "tenderer"
+  },
+  {
+   "link_doctype": "Pre-bid Meeting",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tech and Fin",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "ATC",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Contract Signing and Execution",
+   "link_fieldname": "related_notification"
+  },
+  {
+   "link_doctype": "EMD Management",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Bank Guarantee Management",
+   "link_fieldname": "related_tender"
+  }
+ ],
+ "modified": "2025-05-29 17:29:11.915931",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Opening and Evaluation Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Executive",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tenderer"
+}

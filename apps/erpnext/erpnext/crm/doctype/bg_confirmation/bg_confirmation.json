@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-27 13:08:38.832898",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bg_received_date",
+  "bg_received_or_not"
+ ],
+ "fields": [
+  {
+   "fieldname": "bg_received_date",
+   "fieldtype": "Date",
+   "label": "BG Received Date"
+  },
+  {
+   "fieldname": "bg_received_or_not",
+   "fieldtype": "Select",
+   "label": "BG Received or Not",
+   "options": "\nYes\nNo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-27 13:09:44.467578",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "BG Confirmation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

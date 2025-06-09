@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "autoname": "field:bank_account",
+ "creation": "2018-08-12 14:22:58.282365",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bank_account",
+  "username",
+  "password",
+  "column_break_4",
+  "bank_account_no",
+  "bank_name",
+  "disabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bank Account",
+   "options": "Bank Account",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username / Login ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "bank_account.bank_account_no",
+   "fetch_if_empty": 1,
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Account No",
+   "reqd": 1
+  },
+  {
+   "default": "HDFC Bank",
+   "description": "List of banks available for integration",
+   "fieldname": "bank_name",
+   "fieldtype": "Select",
+   "label": "Bank Name",
+   "options": "\nHDFC Bank",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "links": [],
+ "modified": "2020-07-19 13:10:19.152328",
+ "modified_by": "Administrator",
+ "module": "Bank Integration",
+ "name": "Bank Integration Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Bank Payments Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "bank_account",
+ "track_changes": 1
+}

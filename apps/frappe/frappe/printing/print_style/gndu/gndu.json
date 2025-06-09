@@ -1,0 +1,14 @@
+{
+ "creation": "2024-05-03 15:39:35.877202",
+ "css": "body {\r\n    background-color: #f8f9fa;\r\n    font-family: 'Arial', sans-serif;\r\n}\r\n\r\n/* Style the main container */\r\n.container {\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n    background-color: #fff;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n/* Style the header section */\r\n.header {\r\n    text-align: center;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n/* Style the company name */\r\n.company-name {\r\n    font-size: 24px;\r\n    color: #333;\r\n    font-weight: bold;\r\n}\r\n\r\n/* Style the company address */\r\n.company-address {\r\n    font-size: 16px;\r\n    color: #666;\r\n}\r\n\r\n/* Style the invoice details */\r\n.invoice-details {\r\n    font-size: 16px;\r\n    color: #666;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n/* Style the table */\r\ntable {\r\n    width: 100%;\r\n    border-collapse: collapse;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n/* Style the table header */\r\nth {\r\n    background-color: #f2f2f2;\r\n    padding: 10px;\r\n    text-align: left;\r\n    font-weight: normal;\r\n    color: #333;\r\n    border-bottom: 2px solid #ddd;\r\n}\r\n\r\n/* Style the table rows */\r\ntd {\r\n    padding: 10px;\r\n    border-bottom: 1px solid #ddd;\r\n}\r\n\r\n/* Style the footer section */\r\n.footer {\r\n    margin-top: 20px;\r\n    text-align: right;\r\n}\r\n\r\n/* Style the total amount */\r\n.total-amount {\r\n    font-size: 18px;\r\n    color: #333;\r\n    font-weight: bold;\r\n}\r\n\r\n/* Style the footer */\r\n.footer-text {\r\n    font-size: 12px;\r\n    color: #999;\r\n    margin-top: 10px;\r\n}\r\n\r\n/* Style the signature */\r\n.signature {\r\n    text-align: right;\r\n    margin-top: 50px;\r\n}\r\n\r\n/* Style the declaration */\r\n.declaration {\r\n    text-align: left;\r\n    margin-top: 30px;\r\n    font-style: italic;\r\n}\r\n",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Print Style",
+ "idx": 0,
+ "modified": "2024-05-03 15:50:48.380010",
+ "modified_by": "Administrator",
+ "name": "GNDU",
+ "owner": "Administrator",
+ "print_style_name": "GNDU",
+ "standard": 1
+}

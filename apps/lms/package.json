@@ -1,0 +1,18 @@
+{
+  "name": "frappe_lms",
+  "version": "1.0.0",
+  "description": "Easy to use, open-source, Learning Management System",
+  "scripts": {
+    "test-local": "cypress open --e2e --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frappe/lms.git"
+  },
+  "author": "Frappe",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/frappe/lms/issues"
+  },
+  "homepage": "https://github.com/frappe/lms#readme"
+}

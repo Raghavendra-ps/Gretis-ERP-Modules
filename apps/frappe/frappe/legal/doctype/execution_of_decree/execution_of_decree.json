@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 16:01:58.616205",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_title",
+  "column_break_mlveh",
+  "case_number_issued_by_court",
+  "column_break_9yzzf",
+  "case_reference",
+  "column_break_tv0t6",
+  "execution_of_decree_section",
+  "decree_execution_date",
+  "execution_documents",
+  "column_break_evstb",
+  "responsible_authority_for_execution",
+  "objections_to_execution",
+  "courts_ruling_on_execution_objections",
+  "execution_costs",
+  "receipts_of_compliance",
+  "attorney_notes_on_execution"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "case_reference",
+   "fieldtype": "Data",
+   "label": "Case Reference"
+  },
+  {
+   "fieldname": "execution_of_decree_section",
+   "fieldtype": "Section Break",
+   "label": "Execution of Decree"
+  },
+  {
+   "fieldname": "decree_execution_date",
+   "fieldtype": "Date",
+   "label": "Decree Execution Date"
+  },
+  {
+   "fieldname": "responsible_authority_for_execution",
+   "fieldtype": "Data",
+   "label": "Responsible Authority for Execution"
+  },
+  {
+   "fieldname": "execution_documents",
+   "fieldtype": "Attach",
+   "label": "Execution Documents"
+  },
+  {
+   "fieldname": "objections_to_execution",
+   "fieldtype": "Text Editor",
+   "label": "Objections to Execution"
+  },
+  {
+   "fieldname": "courts_ruling_on_execution_objections",
+   "fieldtype": "Text Editor",
+   "label": "Court's Ruling on Execution Objections"
+  },
+  {
+   "fieldname": "execution_costs",
+   "fieldtype": "Currency",
+   "label": "Execution Costs"
+  },
+  {
+   "fieldname": "receipts_of_compliance",
+   "fieldtype": "Attach",
+   "label": "Receipts of Compliance"
+  },
+  {
+   "fieldname": "attorney_notes_on_execution",
+   "fieldtype": "Text Editor",
+   "label": "Attorney Notes on Execution"
+  },
+  {
+   "fetch_from": "case_title.case_number_issued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "column_break_mlveh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9yzzf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tv0t6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_evstb",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:34.622986",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Execution of Decree",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

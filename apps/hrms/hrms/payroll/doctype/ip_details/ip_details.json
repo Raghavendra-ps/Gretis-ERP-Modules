@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 12:59:17.542170",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ip_number",
+  "ip_name",
+  "no_of_days",
+  "total_wages",
+  "reason_code",
+  "last_working_day"
+ ],
+ "fields": [
+  {
+   "description": "Max length 10 digits",
+   "fieldname": "ip_number",
+   "fieldtype": "Data",
+   "label": "IP Number (10 Digits)"
+  },
+  {
+   "description": "Alphabets & spaces only (Regex validation)",
+   "fieldname": "ip_name",
+   "fieldtype": "Data",
+   "label": "IP Name ( Only alphabets and space )"
+  },
+  {
+   "description": "Whole numbers only",
+   "fieldname": "no_of_days",
+   "fieldtype": "Int",
+   "label": "No. of Days Wages Paid"
+  },
+  {
+   "description": "Stores currency values",
+   "fieldname": "total_wages",
+   "fieldtype": "Currency",
+   "label": "Total Monthly Wages"
+  },
+  {
+   "description": "Numeric only (0 for others)",
+   "fieldname": "reason_code",
+   "fieldtype": "Int",
+   "label": "Reason Code for Zero Working Days"
+  },
+  {
+   "description": "Format: DD/MM/YYYY or DD-MM-YYYY",
+   "fieldname": "last_working_day",
+   "fieldtype": "Date",
+   "label": "Last Working Day ( Format DD/MM/YYYY  or DD-MM-YYYY)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-25 16:47:48.736794",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "IP Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

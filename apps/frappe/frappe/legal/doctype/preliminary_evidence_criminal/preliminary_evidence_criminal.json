@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 13:56:14.655381",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "case_title",
+  "case_number_issued_by_court",
+  "column_break_ckkam",
+  "defendant_name",
+  "defendants_date_of_reply",
+  "section_break_ezm2n",
+  "evidence_summary",
+  "evidence_documents",
+  "list_of_defenses",
+  "courts_initial_assessment",
+  "defendants_reply_admissiondenial_of_plaintiff_claims",
+  "details_of_counter_claims_made_by_defendant"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "column_break_ckkam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defendant_name",
+   "fieldtype": "Link",
+   "label": "Defendant Name",
+   "options": "Defendant Master"
+  },
+  {
+   "fieldname": "defendants_date_of_reply",
+   "fieldtype": "Data",
+   "label": "Defendants Date of Reply"
+  },
+  {
+   "fieldname": "section_break_ezm2n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evidence_summary",
+   "fieldtype": "Text",
+   "label": "Evidence Summary"
+  },
+  {
+   "fieldname": "evidence_documents",
+   "fieldtype": "Table",
+   "label": "Evidence Documents",
+   "options": "Evidence Documents"
+  },
+  {
+   "fieldname": "list_of_defenses",
+   "fieldtype": "Table",
+   "label": "List of Defenses",
+   "options": "List of Defenses"
+  },
+  {
+   "fieldname": "courts_initial_assessment",
+   "fieldtype": "Text",
+   "label": "Courts Initial Assessment"
+  },
+  {
+   "fieldname": "defendants_reply_admissiondenial_of_plaintiff_claims",
+   "fieldtype": "Text",
+   "label": "Defendants Reply (Admission/Denial of Plaintiff Claims)"
+  },
+  {
+   "fieldname": "details_of_counter_claims_made_by_defendant",
+   "fieldtype": "Text",
+   "label": "Details of Counter Claims made by Defendant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:30.426893",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Preliminary Evidence Criminal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title"
+}

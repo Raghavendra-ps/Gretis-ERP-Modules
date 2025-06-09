@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-30 17:59:52.181464",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "onboarding_section",
+  "setup_complete",
+  "onboarding_complete",
+  "enable_permissions",
+  "allow_subquery",
+  "auto_execute_query",
+  "query_result_expiry",
+  "query_result_limit",
+  "is_subscribed",
+  "integrations_section",
+  "telegram_api_token",
+  "query_section",
+  "fiscal_year_start"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "setup_complete",
+   "fieldtype": "Check",
+   "label": "Setup Complete"
+  },
+  {
+   "fieldname": "onboarding_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "onboarding_complete",
+   "fieldtype": "Check",
+   "label": "Onboarding Complete"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_execute_query",
+   "fieldtype": "Check",
+   "label": "Auto Execute Query"
+  },
+  {
+   "default": "10",
+   "fieldname": "query_result_expiry",
+   "fieldtype": "Int",
+   "label": "Cache Query Results For (Minutes)"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_subquery",
+   "fieldtype": "Check",
+   "label": "Allow Subquery"
+  },
+  {
+   "default": "1000",
+   "fieldname": "query_result_limit",
+   "fieldtype": "Int",
+   "label": "Query Result Limit"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_permissions",
+   "fieldtype": "Check",
+   "label": "Enable Permissions"
+  },
+  {
+   "fieldname": "integrations_section",
+   "fieldtype": "Section Break",
+   "label": "Integrations"
+  },
+  {
+   "fieldname": "telegram_api_token",
+   "fieldtype": "Password",
+   "label": "Telegram API Token"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_subscribed",
+   "fieldtype": "Check",
+   "is_virtual": 1,
+   "label": "Is Subscribed"
+  },
+  {
+   "fieldname": "query_section",
+   "fieldtype": "Section Break",
+   "label": "Query"
+  },
+  {
+   "fieldname": "fiscal_year_start",
+   "fieldtype": "Date",
+   "label": "Fiscal Year Start"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-19 19:43:32.059934",
+ "modified_by": "Administrator",
+ "module": "Insights",
+ "name": "Insights Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Insights User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

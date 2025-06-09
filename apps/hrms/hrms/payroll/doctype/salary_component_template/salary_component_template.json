@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-05 12:35:18.059728",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "annexure_1_section",
+  "salary_component_section",
+  "basic",
+  "hra",
+  "conveyance_allowance",
+  "bonus",
+  "special_allowance",
+  "gross_salary_a",
+  "employer_contribution_section",
+  "provident_fund",
+  "esic",
+  "total_employer_contribution_b",
+  "total_cost_of_company_ab",
+  "deductions_section",
+  "pf_employee_contribution",
+  "esi_employee_contribution",
+  "total_deductions",
+  "section_break_crdaa",
+  "in_hand_salary_per_month"
+ ],
+ "fields": [
+  {
+   "fieldname": "annexure_1_section",
+   "fieldtype": "Section Break",
+   "label": "Annexure 1"
+  },
+  {
+   "fieldname": "salary_component_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Component"
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Currency",
+   "label": "Basic"
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Currency",
+   "label": "HRA"
+  },
+  {
+   "fieldname": "conveyance_allowance",
+   "fieldtype": "Currency",
+   "label": "Conveyance Allowance"
+  },
+  {
+   "fieldname": "bonus",
+   "fieldtype": "Currency",
+   "label": "Bonus"
+  },
+  {
+   "fieldname": "special_allowance",
+   "fieldtype": "Currency",
+   "label": "Special Allowance "
+  },
+  {
+   "fieldname": "gross_salary_a",
+   "fieldtype": "Currency",
+   "label": "Gross Salary A"
+  },
+  {
+   "fieldname": "employer_contribution_section",
+   "fieldtype": "Section Break",
+   "label": "Employer Contribution"
+  },
+  {
+   "fieldname": "provident_fund",
+   "fieldtype": "Currency",
+   "label": "Provident Fund"
+  },
+  {
+   "fieldname": "esic",
+   "fieldtype": "Currency",
+   "label": "ESIC"
+  },
+  {
+   "fieldname": "total_cost_of_company_ab",
+   "fieldtype": "Currency",
+   "label": "Total Cost of Company AB"
+  },
+  {
+   "fieldname": "deductions_section",
+   "fieldtype": "Section Break",
+   "label": "Deductions"
+  },
+  {
+   "fieldname": "pf_employee_contribution",
+   "fieldtype": "Currency",
+   "label": "PF Employee Contribution"
+  },
+  {
+   "fieldname": "esi_employee_contribution",
+   "fieldtype": "Currency",
+   "label": "ESI Employee Contribution"
+  },
+  {
+   "fieldname": "total_deductions",
+   "fieldtype": "Currency",
+   "label": "Total Deductions"
+  },
+  {
+   "fieldname": "section_break_crdaa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "in_hand_salary_per_month",
+   "fieldtype": "Currency",
+   "label": "In Hand Salary Per Month"
+  },
+  {
+   "fieldname": "total_employer_contribution_b",
+   "fieldtype": "Currency",
+   "label": "Total Employer Contribution B"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-05 14:36:11.580990",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "Salary Component Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

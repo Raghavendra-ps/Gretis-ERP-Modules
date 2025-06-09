@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-18 15:14:49.991716",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "script_name",
+  "script_type",
+  "script",
+  "status",
+  "execution_method",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "script_name",
+   "fieldtype": "Data",
+   "label": "Script Name"
+  },
+  {
+   "fieldname": "script_type",
+   "fieldtype": "Select",
+   "label": "Script Type",
+   "options": "\nPython\nJavaScript"
+  },
+  {
+   "fieldname": "script",
+   "fieldtype": "Code",
+   "label": "Script"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nEnabled\nDisabled"
+  },
+  {
+   "fieldname": "execution_method",
+   "fieldtype": "Select",
+   "label": "Execution Method",
+   "options": "\nScheduled\nEvent Triggered\nManual"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-18 15:14:49.991716",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Server Script Manager",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-27 14:58:51.979818",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tender_title",
+  "tender_id",
+  "organization",
+  "opening_date",
+  "closing_date",
+  "tender_amount",
+  "tender_type",
+  "tender_category",
+  "product_category",
+  "portal",
+  "scraped_on",
+  "detail_url",
+  "is_duplicate",
+  "matched_keyword"
+ ],
+ "fields": [
+  {
+   "fieldname": "tender_title",
+   "fieldtype": "Data",
+   "label": "Tender Title"
+  },
+  {
+   "fieldname": "tender_id",
+   "fieldtype": "Data",
+   "label": "Tender ID"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "opening_date",
+   "fieldtype": "Datetime",
+   "label": "Opening Date"
+  },
+  {
+   "fieldname": "closing_date",
+   "fieldtype": "Datetime",
+   "label": "Closing Date"
+  },
+  {
+   "fieldname": "tender_amount",
+   "fieldtype": "Currency",
+   "label": "Estimated Amount"
+  },
+  {
+   "fieldname": "tender_type",
+   "fieldtype": "Select",
+   "label": "Tender Type",
+   "options": "\nOpen\nLimited\nSingle"
+  },
+  {
+   "fieldname": "tender_category",
+   "fieldtype": "Select",
+   "label": "Tender Category",
+   "options": "\nServices\nWorks\nGoods"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Select",
+   "label": "Product Category",
+   "options": "\nManpower Supply"
+  },
+  {
+   "fieldname": "portal",
+   "fieldtype": "Data",
+   "label": "Portal Source"
+  },
+  {
+   "fieldname": "scraped_on",
+   "fieldtype": "Datetime",
+   "label": "Scraped Date"
+  },
+  {
+   "fieldname": "detail_url",
+   "fieldtype": "Data",
+   "label": "Detail URL"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_duplicate",
+   "fieldtype": "Check",
+   "label": "Is Duplicate"
+  },
+  {
+   "fieldname": "matched_keyword",
+   "fieldtype": "Data",
+   "label": "Matched Keyword"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-09 16:06:14.833920",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Punjab Tenders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tender_title"
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:48:21.158569",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "case_title",
+  "case_reference",
+  "cross_examination_section",
+  "cross_examination_details_details_of_cross_examination_process",
+  "opposing_party_questions_questions_from_opposite_party",
+  "responses_from_the_witnesses"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "case_reference",
+   "fieldtype": "Data",
+   "label": "Case Reference"
+  },
+  {
+   "fieldname": "cross_examination_section",
+   "fieldtype": "Section Break",
+   "label": "Cross Examination"
+  },
+  {
+   "fieldname": "cross_examination_details_details_of_cross_examination_process",
+   "fieldtype": "Text",
+   "label": "Cross Examination Details Details of Cross examination Process"
+  },
+  {
+   "fieldname": "opposing_party_questions_questions_from_opposite_party",
+   "fieldtype": "Text",
+   "label": "Opposing Party Questions (Questions from Opposite Party)"
+  },
+  {
+   "fieldname": "responses_from_the_witnesses",
+   "fieldtype": "Text",
+   "label": "Responses From the Witnesses"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:31.277416",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Cross Examination",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

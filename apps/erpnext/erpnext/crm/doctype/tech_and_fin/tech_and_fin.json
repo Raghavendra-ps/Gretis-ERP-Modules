@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-28 15:35:54.533254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_preparation_tab",
+  "related_tender",
+  "column_break_krkmr",
+  "submission_deadline",
+  "column_break_0epax",
+  "tender_executive",
+  "column_break_oxyth",
+  "tenderer",
+  "section_break_x0nuf",
+  "tender_doc_master",
+  "tech_and_fin_child_table",
+  "section_break_jmdt8",
+  "attach_merged_docs",
+  "boq_tab",
+  "boq_sample_link",
+  "boq_format",
+  "section_break_roepx",
+  "uploaded_boq",
+  "column_break_lhmwg",
+  "remarks_and_feedback",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "related_tender",
+   "fieldtype": "Link",
+   "label": "Related Tender",
+   "options": "Tender Notification"
+  },
+  {
+   "fieldname": "document_preparation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Document Preparation Preview"
+  },
+  {
+   "fieldname": "boq_tab",
+   "fieldtype": "Section Break",
+   "label": "BOQ"
+  },
+  {
+   "default": "files/BOQ SAMPLE.xlsm",
+   "fieldname": "boq_sample_link",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "BOQ Sample Link"
+  },
+  {
+   "fieldname": "uploaded_boq",
+   "fieldtype": "Attach",
+   "label": "Upload BOQ"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tech and Fin",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_x0nuf",
+   "fieldtype": "Section Break",
+   "label": "Technical Documents"
+  },
+  {
+   "fetch_from": "related_tender.tenderer",
+   "fieldname": "tenderer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tenderer"
+  },
+  {
+   "fieldname": "boq_format",
+   "fieldtype": "Table",
+   "label": "BOQ Format",
+   "options": "BOQ Format"
+  },
+  {
+   "fetch_from": "related_tender.submission_deadline",
+   "fieldname": "submission_deadline",
+   "fieldtype": "Data",
+   "label": "Submission Deadline"
+  },
+  {
+   "fieldname": "remarks_and_feedback",
+   "fieldtype": "Text Editor",
+   "label": "Remarks and Feedback"
+  },
+  {
+   "fieldname": "column_break_krkmr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0epax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lhmwg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_roepx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oxyth",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tender_executive",
+   "fieldtype": "Link",
+   "label": "Tender Executive",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "tech_and_fin_child_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Tender Document Details",
+   "options": "Tech and Fin Child Table"
+  },
+  {
+   "fieldname": "tender_doc_master",
+   "fieldtype": "Table",
+   "label": "Tender Doc Master ",
+   "options": "Tender Doc Master"
+  },
+  {
+   "fieldname": "section_break_jmdt8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_merged_docs",
+   "fieldtype": "Attach",
+   "label": "Attach Merged Docs"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Tender Notification",
+   "link_fieldname": "tenderer"
+  },
+  {
+   "link_doctype": "Pre-bid Meeting",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "ATC",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Opening and Evaluation Details",
+   "link_fieldname": "related_submission"
+  },
+  {
+   "link_doctype": "Tender Contract Signing and Execution",
+   "link_fieldname": "related_notification"
+  },
+  {
+   "link_doctype": "EMD Management",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Bank Guarantee Management",
+   "link_fieldname": "related_tender"
+  }
+ ],
+ "modified": "2025-04-21 15:13:12.437238",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tech and Fin",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tenderer"
+}

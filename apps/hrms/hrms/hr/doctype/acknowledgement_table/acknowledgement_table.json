@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 14:53:30.292287",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_description",
+  "acknowledged_by",
+  "acceptance_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_description",
+   "fieldtype": "Small Text",
+   "label": "Task Description",
+   "options": "Work Allocation Table"
+  },
+  {
+   "fieldname": "acknowledged_by",
+   "fieldtype": "Link",
+   "label": "Acknowledged By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "acceptance_remarks",
+   "fieldtype": "Small Text",
+   "label": "Acceptance Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-24 15:08:37.391827",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Acknowledgement Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

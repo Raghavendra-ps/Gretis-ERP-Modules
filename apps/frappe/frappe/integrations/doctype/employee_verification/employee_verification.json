@@ -1,0 +1,294 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-27 13:22:28.818144",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "column_break_9t7pf",
+  "previous_company_name",
+  "column_break_aasem",
+  "previous_reporting_manager_name",
+  "column_break_u1cke",
+  "previous_employer_email",
+  "column_break_364bm",
+  "employment_period_from",
+  "column_break_4rvjt",
+  "employment_period_to",
+  "column_break_0quiq",
+  "last_designation",
+  "section_break_x0mf0",
+  "reason_for_leaving",
+  "column_break_tuyff",
+  "reference_contact_name",
+  "column_break_eu1r9",
+  "reference_contact_number",
+  "column_break_7refi",
+  "reference_contact_email",
+  "column_break_mmlhf",
+  "was_employment_verified",
+  "section_break_vbnki",
+  "previous_salary_slip",
+  "column_break_mucl9",
+  "background_verification_report",
+  "column_break_83i5g",
+  "experience_letter_relieving_letter",
+  "column_break_rtkdw",
+  "attach_resume",
+  "column_break_hm1ay",
+  "last_drawn_salary",
+  "column_break_3scnc",
+  "verification_status",
+  "column_break_ot5ek",
+  "eligible_for_rehire",
+  "column_break_tzp5n",
+  "reason_for_non_rehire",
+  "section_break_sw69x",
+  "hr_comments",
+  "verified_by",
+  "employee_full_name",
+  "token"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verification_status",
+   "fieldtype": "Select",
+   "label": "Verification Status",
+   "options": "\nPending\nVerified\nFailed"
+  },
+  {
+   "fieldname": "previous_company_name",
+   "fieldtype": "Data",
+   "label": "Previous Company Name"
+  },
+  {
+   "fieldname": "previous_employer_email",
+   "fieldtype": "Data",
+   "label": "Previous Employer Email"
+  },
+  {
+   "fieldname": "employment_period_from",
+   "fieldtype": "Date",
+   "label": "Employment Period (From)"
+  },
+  {
+   "fieldname": "employment_period_to",
+   "fieldtype": "Date",
+   "label": "Employment Period (To)"
+  },
+  {
+   "fieldname": "last_designation",
+   "fieldtype": "Data",
+   "label": "Last Designation"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Select",
+   "label": "Reason for Leaving",
+   "options": "\nResigned\nTerminated\nContract Ended\nOther"
+  },
+  {
+   "fieldname": "reference_contact_name",
+   "fieldtype": "Data",
+   "label": "Reference Contact Name"
+  },
+  {
+   "fieldname": "reference_contact_number",
+   "fieldtype": "Data",
+   "label": "Reference Contact Number"
+  },
+  {
+   "fieldname": "reference_contact_email",
+   "fieldtype": "Data",
+   "label": "Reference Contact Email"
+  },
+  {
+   "fieldname": "previous_salary_slip",
+   "fieldtype": "Attach",
+   "label": "Previous Salary Slip"
+  },
+  {
+   "fieldname": "background_verification_report",
+   "fieldtype": "Attach",
+   "label": "Background Verification Report"
+  },
+  {
+   "fieldname": "was_employment_verified",
+   "fieldtype": "Select",
+   "label": "Was Employment Verified?",
+   "options": "\nPending\nVerified\nRejected"
+  },
+  {
+   "fieldname": "hr_comments",
+   "fieldtype": "Small Text",
+   "label": "HR Comments"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_9t7pf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_u1cke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_364bm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_x0mf0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_aasem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4rvjt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0quiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tuyff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_eu1r9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7refi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mmlhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vbnki",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mucl9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_83i5g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hm1ay",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tzp5n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3scnc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "experience_letter_relieving_letter",
+   "fieldtype": "Attach",
+   "label": "Experience Letter / Relieving Letter"
+  },
+  {
+   "fetch_from": "employee_name.employee_name",
+   "fieldname": "employee_full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Full Name"
+  },
+  {
+   "fieldname": "previous_reporting_manager_name",
+   "fieldtype": "Data",
+   "label": "Previous Reporting Manager Name"
+  },
+  {
+   "fieldname": "attach_resume",
+   "fieldtype": "Attach",
+   "label": "Attach Resume"
+  },
+  {
+   "fieldname": "column_break_rtkdw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "eligible_for_rehire",
+   "fieldtype": "Select",
+   "label": "Eligible for Rehire",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "reason_for_non_rehire",
+   "fieldtype": "Small Text",
+   "label": "Reason for Non Rehire"
+  },
+  {
+   "fieldname": "last_drawn_salary",
+   "fieldtype": "Currency",
+   "label": "Last Drawn Salary"
+  },
+  {
+   "fieldname": "column_break_ot5ek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_sw69x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Token"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-20 15:07:19.250176",
+ "modified_by": "Administrator",
+ "module": "Integrations",
+ "name": "Employee Verification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_full_name"
+}

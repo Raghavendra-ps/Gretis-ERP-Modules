@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-14 15:00:00.451733",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_title",
+  "column_break_5bzyf",
+  "case_number_issued_by_court",
+  "section_break_tb3kp",
+  "hearing_schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Initiation"
+  },
+  {
+   "fieldname": "hearing_schedule",
+   "fieldtype": "Table",
+   "label": "Hearing Schedule",
+   "options": "Hearing Schedule"
+  },
+  {
+   "fetch_from": "case_title.case_number_issued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "column_break_5bzyf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tb3kp",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-27 16:20:32.570659",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Court Hearing Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title"
+}

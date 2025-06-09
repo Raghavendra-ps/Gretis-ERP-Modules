@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-13 16:51:29.722717",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "competitor_name",
+  "director_name",
+  "address",
+  "alert_html",
+  "column_break_oidar",
+  "mobile",
+  "email",
+  "url",
+  "section_break_e5ya6",
+  "attachments",
+  "competitor_client_list_section",
+  "list",
+  "section_break_mcwlq",
+  "tender_competitors"
+ ],
+ "fields": [
+  {
+   "fieldname": "competitor_name",
+   "fieldtype": "Data",
+   "label": "Competitor Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_oidar",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "Competitor Attachments"
+  },
+  {
+   "fieldname": "section_break_e5ya6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "fieldname": "director_name",
+   "fieldtype": "Data",
+   "label": "Director Name"
+  },
+  {
+   "fieldname": "competitor_client_list_section",
+   "fieldtype": "Section Break",
+   "label": "Competitor Client List"
+  },
+  {
+   "fieldname": "list",
+   "fieldtype": "Table",
+   "label": "List",
+   "options": "Competitor Client List"
+  },
+  {
+   "fieldname": "section_break_mcwlq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tender_competitors",
+   "fieldtype": "Table",
+   "label": "Tender Competitors",
+   "options": "Tender Competitor Alert Log"
+  },
+  {
+   "fieldname": "alert_html",
+   "fieldtype": "HTML",
+   "label": "Alerts"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-10 15:11:26.904552",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Competitors",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "competitor_name"
+}

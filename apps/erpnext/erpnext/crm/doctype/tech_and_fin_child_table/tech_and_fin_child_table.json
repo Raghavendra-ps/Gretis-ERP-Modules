@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-13 09:58:13.914741",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tender_document_details",
+  "document_name",
+  "attach_doc",
+  "description",
+  "doc_validity"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach_doc",
+   "fieldtype": "Attach",
+   "label": "Attach Doc"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "doc_validity",
+   "fieldtype": "Date",
+   "label": "Doc Validity"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "tender_document_details",
+   "fieldtype": "Link",
+   "label": "Document Master",
+   "options": "Tender Document Master"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-11 11:39:58.063656",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tech and Fin Child Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "document_name"
+}

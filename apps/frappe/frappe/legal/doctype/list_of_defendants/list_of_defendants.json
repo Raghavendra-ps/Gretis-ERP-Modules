@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-12 15:10:02.570238",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "defendant",
+  "through",
+  "address",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "defendant",
+   "fieldtype": "Data",
+   "label": "Defendant"
+  },
+  {
+   "fieldname": "through",
+   "fieldtype": "Select",
+   "label": "Method of Service",
+   "options": "\nRegistered Post\nIn Person"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Service Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-13 14:42:46.414120",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "List of Defendants",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

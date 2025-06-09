@@ -1,0 +1,17 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "colebemis",
+    "ericfennis"
+  ],
+  "tags": [
+    "add",
+    "new",
+    "maths",
+    "+"
+  ],
+  "categories": [
+    "maths",
+    "shapes"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series: TRVEXP-.YYYY.-",
+ "creation": "2024-07-09 17:45:27.274326",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overview_section",
+  "naming_series",
+  "posting_date",
+  "employee_name",
+  "purpose_of_travel",
+  "column_break_xu1q6",
+  "from_date",
+  "to_date",
+  "mode_of_travel",
+  "no_of_kms",
+  "column_break_yl4iw",
+  "approver",
+  "column_break_b8iu3",
+  "approver_name",
+  "employee_full_name",
+  "section_break_xg1hw",
+  "expenses",
+  "section_break_0nsds",
+  "grand_total",
+  "attach_your_documents_here",
+  "attach_your_documents_here_preview",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "overview_section",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_name.employee_name",
+   "fieldname": "employee_full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Full Name"
+  },
+  {
+   "fieldname": "approver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Approver",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "approver.full_name",
+   "fieldname": "approver_name",
+   "fieldtype": "Data",
+   "label": "Approver Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "TRVEXP-.YYYY.-"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "section_break_xg1hw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expenses",
+   "fieldtype": "Table",
+   "label": "Expenses",
+   "options": "Expense Claim Detail"
+  },
+  {
+   "fieldname": "section_break_0nsds",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Expense",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "attach_your_documents_here",
+   "fieldtype": "Attach",
+   "label": "Attach your Documents Here"
+  },
+  {
+   "fieldname": "attach_your_documents_here_preview",
+   "fieldtype": "HTML",
+   "label": "Attach Document Preview"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "purpose_of_travel",
+   "fieldtype": "Data",
+   "label": "Purpose of Travel"
+  },
+  {
+   "fieldname": "column_break_yl4iw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xu1q6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_b8iu3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_kms",
+   "fieldtype": "Currency",
+   "label": "No of Kms"
+  },
+  {
+   "fieldname": "mode_of_travel",
+   "fieldtype": "Select",
+   "label": "Mode of Travel",
+   "options": "\nTwo-Wheeler\nFour-Wheeler"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-21 16:21:36.566024",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Travel Expense",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CEO",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_full_name",
+ "track_changes": 1
+}

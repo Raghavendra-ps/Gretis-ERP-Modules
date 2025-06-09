@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 15:42:51.904800",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_documentation",
+  "section_break_lo1pw",
+  "case_title",
+  "case_number_issued_by_court",
+  "section_break_au269",
+  "column_break_ghoat",
+  "evidence_submission_date",
+  "evidence_type",
+  "upload_files",
+  "section_break_qa6ph",
+  "evidence_description",
+  "section_break_ktknk",
+  "section_break_m5nwe",
+  "section_break_ar3g8",
+  "evidence",
+  "column_break_naqtr",
+  "section_break_vrwwu",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "evidence_submission_date",
+   "fieldtype": "Date",
+   "label": "Evidence Submission Date"
+  },
+  {
+   "fieldname": "evidence_type",
+   "fieldtype": "Select",
+   "label": "Evidence Type",
+   "options": "\nDocumentary\nOral\nDigital\nPhysical\nWitness Statement"
+  },
+  {
+   "fieldname": "section_break_qa6ph",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evidence_description",
+   "fieldtype": "Text",
+   "label": "Evidence Description"
+  },
+  {
+   "fieldname": "section_break_m5nwe",
+   "fieldtype": "Data",
+   "label": "Submitted By"
+  },
+  {
+   "fieldname": "column_break_ghoat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_naqtr",
+   "fieldtype": "Text",
+   "label": "Review Comments"
+  },
+  {
+   "fieldname": "section_break_au269",
+   "fieldtype": "Select",
+   "label": "Submission Status",
+   "options": "\nDraft\nSubmitted\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "upload_files",
+   "fieldtype": "Attach",
+   "label": "Upload Files"
+  },
+  {
+   "fieldname": "section_break_ar3g8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "section_break_ktknk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This stage organizes the submission of evidence, ensuring that all necessary materials are properly categorized, uploaded, and tracked.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_lo1pw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evidence",
+   "fieldtype": "Table",
+   "label": "Evidence",
+   "options": "Evidence Child Table"
+  },
+  {
+   "fieldname": "section_break_vrwwu",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Appeals Reviews and Revisions",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2025-01-03 16:29:39.941432",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Evidence Submission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

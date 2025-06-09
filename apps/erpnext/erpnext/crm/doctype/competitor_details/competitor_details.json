@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-02 15:17:37.882975",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "competitor_name",
+  "lowest_bidder",
+  "price_by_percentage",
+  "competitor_documents",
+  "price_by_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "competitor_name",
+   "fieldtype": "Data",
+   "label": "Competitor Name"
+  },
+  {
+   "fieldname": "competitor_documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Competitor Documents"
+  },
+  {
+   "fieldname": "price_by_amount",
+   "fieldtype": "Data",
+   "label": "Price by Amount"
+  },
+  {
+   "fieldname": "price_by_percentage",
+   "fieldtype": "Percent",
+   "label": "Price by Percentage"
+  },
+  {
+   "fieldname": "lowest_bidder",
+   "fieldtype": "Data",
+   "label": "Lowest Bidder"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-21 13:13:38.892909",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Competitor Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "competitor_name"
+}

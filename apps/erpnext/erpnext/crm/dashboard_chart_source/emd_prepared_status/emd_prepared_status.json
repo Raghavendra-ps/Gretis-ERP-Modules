@@ -1,0 +1,13 @@
+{
+ "creation": "2025-01-10 11:14:02.513630",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2025-01-10 11:42:49.762617",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "EMD Prepared Status",
+ "owner": "Administrator",
+ "source_name": "EMD Prepared Status",
+ "timeseries": 1
+}

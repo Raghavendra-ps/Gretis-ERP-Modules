@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-15 14:55:41.734694",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "os",
+  "cpu_core",
+  "ram",
+  "ssd",
+  "hdd"
+ ],
+ "fields": [
+  {
+   "fieldname": "os",
+   "fieldtype": "Data",
+   "label": "OS"
+  },
+  {
+   "fieldname": "cpu_core",
+   "fieldtype": "Data",
+   "label": "CPU Core"
+  },
+  {
+   "fieldname": "ram",
+   "fieldtype": "Data",
+   "label": "RAM"
+  },
+  {
+   "fieldname": "ssd",
+   "fieldtype": "Data",
+   "label": "SSD"
+  },
+  {
+   "fieldname": "hdd",
+   "fieldtype": "Data",
+   "label": "HDD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-15 14:55:41.734694",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Hardware Specifications",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

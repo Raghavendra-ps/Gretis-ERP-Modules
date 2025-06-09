@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-03-18 15:03:11.543046",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_98vgs",
+  "instructions_and_reason_codes",
+  "section_break_g4iar",
+  "challan_file",
+  "apply_for",
+  "department",
+  "amended_from",
+  "challan_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_98vgs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "instructions_and_reason_codes",
+   "fieldtype": "HTML",
+   "label": "Instructions and Reason Codes",
+   "options": "<div style=\"padding: 10px; background: #f8f9fa; border-radius: 5px; margin-bottom: 10px; max-height: 400px; overflow-y: auto; border: 1px solid #ddd;\">\n    <h3>Instructions &amp; Reason Codes</h3>\n    <table border=\"1\" style=\"border-collapse: collapse; font-size: 14px; text-align: left;\" width=\"100%\">\n        <thead>\n            <tr style=\"background-color: #00A8E8; color: white;\">\n                <th style=\"padding: 8px;\">Reason</th>\n                <th style=\"padding: 8px;\">Code</th>\n                <th style=\"padding: 8px;\">Note</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr><td>Without Reason</td><td>0</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>On Leave</td><td>1</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>Left Service</td><td>2</td><td>Please provide last working day (dd/mm/yyyy). IP will not appear from next wage period</td></tr>\n            <tr><td>Retired</td><td>3</td><td>Please provide last working day (dd/mm/yyyy). IP will not appear from next wage period</td></tr>\n            <tr>\n                <td>Out of Coverage</td>\n                <td>4</td>\n                <td>\n                    Please provide last working day (dd/mm/yyyy). IP will not appear from next contribution period. \n                    <b>This option is valid only if Wage Period is April/October.</b> In case any other month then IP will continue to appear in the list.\n                </td>\n            </tr>\n            <tr><td>Expired</td><td>5</td><td>Please provide last working day (dd/mm/yyyy). IP will not appear from next wage period</td></tr>\n            <tr><td>Non Implemented area</td><td>6</td><td>Please provide last working day (dd/mm/yyyy).</td></tr>\n            <tr><td>Compliance by Immediate Employer</td><td>7</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>Suspension of work</td><td>8</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>Strike/Lockout</td><td>9</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>Retrenchment</td><td>10</td><td>Please provide last working day (dd/mm/yyyy). IP will not appear from next wage period</td></tr>\n            <tr><td>No Work</td><td>11</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>Doesn't Belong To This Employer</td><td>12</td><td><b>Leave last working day as blank</b></td></tr>\n            <tr><td>Duplicate IP</td><td>13</td><td><b>Leave last working day as blank</b></td></tr>\n        </tbody>\n    </table>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_g4iar",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "apply_for",
+   "fieldtype": "Select",
+   "label": "Apply For",
+   "options": "\nAll Departments\nSpecific Departments"
+  },
+  {
+   "depends_on": "eval:doc.apply_for == \"Specific Departments\"",
+   "fieldname": "department",
+   "fieldtype": "Table MultiSelect",
+   "label": "Department",
+   "mandatory_depends_on": "eval:doc.apply_for == \"Specific Departments\"",
+   "options": "Department List"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ESIC Payments",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "challan_file",
+   "fieldtype": "Attach",
+   "label": "Challan File"
+  },
+  {
+   "fieldname": "challan_preview",
+   "fieldtype": "HTML",
+   "label": "Challan Preview",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-26 11:18:31.115912",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "ESIC Payments",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

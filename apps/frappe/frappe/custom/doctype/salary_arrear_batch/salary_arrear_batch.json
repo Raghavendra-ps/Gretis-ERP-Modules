@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:ARREAR-BATCH-YYYY-001",
+ "creation": "2025-01-21 16:24:22.030620",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "arrear_batch_id",
+  "calculation_date",
+  "implementation_date",
+  "remarks",
+  "salary_arrear_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "ARREAR-BATCH-YYYY-001"
+  },
+  {
+   "fieldname": "arrear_batch_id",
+   "fieldtype": "Data",
+   "label": "Arrear Batch ID"
+  },
+  {
+   "fieldname": "calculation_date",
+   "fieldtype": "Date",
+   "label": "Calculation Date"
+  },
+  {
+   "fieldname": "implementation_date",
+   "fieldtype": "Date",
+   "label": "Implementation Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "salary_arrear_details",
+   "fieldtype": "Table",
+   "label": "Salary Arrear Details",
+   "options": "Salary Arrear Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-21 16:24:22.030620",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Salary Arrear Batch",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

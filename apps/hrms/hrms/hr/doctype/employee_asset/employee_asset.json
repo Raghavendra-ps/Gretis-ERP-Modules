@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-07 11:42:34.986515",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "asset_type",
+  "condition",
+  "section_break_o1iud",
+  "serial_number",
+  "date_issued",
+  "column_break_wnic4",
+  "describe_if_faulty"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee ",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset_type",
+   "fieldtype": "Table",
+   "label": "Asset Type",
+   "options": "Asset Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_o1iud",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_issued",
+   "fieldtype": "Date",
+   "label": "Date Issued",
+   "reqd": 1
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Condition",
+   "options": "\nGood\nFair\nPoor",
+   "reqd": 1
+  },
+  {
+   "description": "Any damage done by Employee has to bear the charges.",
+   "fieldname": "describe_if_faulty",
+   "fieldtype": "Text",
+   "label": "Describe if faulty ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wnic4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Employee Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-07 13:05:25.281498",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Asset",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

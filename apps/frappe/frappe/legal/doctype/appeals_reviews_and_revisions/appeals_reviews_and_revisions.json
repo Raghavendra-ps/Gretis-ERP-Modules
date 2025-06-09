@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 16:00:30.289501",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_documentation",
+  "section_break_puuzd",
+  "case_title",
+  "column_break_retjv",
+  "case_number_issued_by_court",
+  "appeal_and_review_process_section",
+  "appeal_type",
+  "appellate_court_name",
+  "column_break_sriux",
+  "filing_date",
+  "hearing_date",
+  "section_break_h5qii",
+  "original_judgment_reference",
+  "appeal_status",
+  "section_break_tnqxw",
+  "appeal_outcome",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case Documentation"
+  },
+  {
+   "fetch_from": "case_title.case_numberissued_by_court",
+   "fieldname": "case_number_issued_by_court",
+   "fieldtype": "Data",
+   "label": "Case Number (Issued by Court)"
+  },
+  {
+   "fieldname": "appeal_and_review_process_section",
+   "fieldtype": "Section Break",
+   "label": "Appeal and Review Process"
+  },
+  {
+   "fieldname": "appeal_type",
+   "fieldtype": "Select",
+   "label": "Appeal Type",
+   "options": "\nAppeal\nReview\nRevision"
+  },
+  {
+   "fieldname": "appellate_court_name",
+   "fieldtype": "Link",
+   "label": "Appellate Court Name",
+   "options": "Court Master"
+  },
+  {
+   "fieldname": "filing_date",
+   "fieldtype": "Date",
+   "label": "Filing Date"
+  },
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "label": "Hearing Date"
+  },
+  {
+   "fieldname": "section_break_h5qii",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "original_judgment_reference",
+   "fieldtype": "Text Editor",
+   "label": "Original Judgment Reference"
+  },
+  {
+   "fieldname": "appeal_status",
+   "fieldtype": "Select",
+   "label": "Appeal Status",
+   "options": "\nFiled\nPending\nAccepted\nRejected\nConcluded"
+  },
+  {
+   "fieldname": "section_break_tnqxw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "appeal_outcome",
+   "fieldtype": "Text Editor",
+   "label": "Appeal Outcome"
+  },
+  {
+   "fetch_from": "case_title.case_title",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "column_break_sriux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_retjv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_documentation",
+   "fieldtype": "HTML",
+   "label": "Case Documentation",
+   "options": "<div style=\"padding: 10px; background-color: #e7f3fe; color: #004085; border: 1px solid #b8daff; border-radius: 4px; margin-bottom: 10px;\">\n   <strong>This Stage tracks all post-judgment actions, such as filing appeals or seeking reviews/revisions in higher courts.</strong>\n</div>\n"
+  },
+  {
+   "fieldname": "section_break_puuzd",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case Documentation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Initiation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Summons Issuance",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Written Statement and Reply",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Evidence Submission",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Hearing Schedule and Court Proceedings",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Judgment and Orders",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Compliance and Implementation",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Case Closure",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Documents Repository",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Legal Calendar",
+   "link_fieldname": "case_title"
+  },
+  {
+   "link_doctype": "Task Management",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2024-12-24 16:32:56.227555",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Appeals Reviews and Revisions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

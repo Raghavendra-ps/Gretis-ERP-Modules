@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-13 16:50:52.100441",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_name",
+  "attachment_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_name",
+   "fieldtype": "Data",
+   "label": "Doc Name"
+  },
+  {
+   "fieldname": "attachment_file",
+   "fieldtype": "Attach",
+   "label": "Attachment File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-13 16:50:52.100441",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Competitor Attachments",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

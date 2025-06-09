@@ -1,0 +1,2 @@
+import{q as n,o as a,b as l,a as e,t as o,r}from"./index-683cf2d0.js";const i={class:"h-full cursor-pointer rounded border p-4 hover:border-gray-400"},c={class:"mb-1 block text-lg font-medium text-gray-900"},d={class:"line-clamp-3 text-base text-gray-700"},u=n({__name:"HCard",props:{title:null,description:null},setup(t){return(s,p)=>(a(),l("div",i,[e("span",null,[e("span",c,o(t.title),1),r(s.$slots,"description",{},()=>[e("span",d,o(t.description),1)])]),r(s.$slots,"bottom")]))}});export{u as _};
+//# sourceMappingURL=HCard.vue_vue_type_script_setup_true_lang-d4d6cfbb.js.map

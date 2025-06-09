@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-20 10:25:31.985667",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_master",
+  "document_validity",
+  "document_attach",
+  "document_preview",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_master",
+   "fieldtype": "Link",
+   "label": "Document Master",
+   "options": "Tender Document Master"
+  },
+  {
+   "fieldname": "document_preview",
+   "fieldtype": "HTML",
+   "label": "Document Preview"
+  },
+  {
+   "fieldname": "document_attach",
+   "fieldtype": "Attach",
+   "label": "Document Attach"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "document_validity",
+   "fieldtype": "Date",
+   "label": "Document Validity "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-10 14:46:34.418825",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Document Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,321 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-12-19 15:23:46.713736",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "related_tender_evaluation",
+  "emd_details_section",
+  "emd_id",
+  "submitted_method",
+  "emd_return_date",
+  "emd_status",
+  "column_break_mwzqq",
+  "bid_outcome",
+  "bid_validity",
+  "tenderer_email",
+  "emd_preparation_status",
+  "column_break_ajuy6",
+  "related_tender",
+  "submission_deadline",
+  "tender_id",
+  "emd_calculation_section",
+  "annual_cost",
+  "manual_entry",
+  "column_break_opdbq",
+  "emd_rate",
+  "column_break_tdzdx",
+  "emd_amount",
+  "amount_in_words",
+  "column_break_b8toi",
+  "remarks",
+  "column_break_fwo65",
+  "emd_softcopy",
+  "column_break_sidnk",
+  "payment_rcpt_eproc",
+  "bid_lost_flash_message",
+  "winner_message",
+  "tenderer",
+  "tenderer_address",
+  "bid_expiry_date",
+  "now_date",
+  "tender_publish_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "related_tender_evaluation",
+   "fieldtype": "Link",
+   "label": "Related Tender Evaluation",
+   "options": "Tender Opening and Evaluation Details"
+  },
+  {
+   "fieldname": "emd_details_section",
+   "fieldtype": "Section Break",
+   "label": "EMD Details"
+  },
+  {
+   "fieldname": "emd_id",
+   "fieldtype": "Data",
+   "label": "EMD ID"
+  },
+  {
+   "fieldname": "submitted_method",
+   "fieldtype": "Select",
+   "label": "Submitted Method ",
+   "options": "\nBank Draft\nOnline Transfer\nCash\nOther"
+  },
+  {
+   "fieldname": "emd_return_date",
+   "fieldtype": "Date",
+   "label": "EMD Return Date"
+  },
+  {
+   "fieldname": "emd_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "EMD Status",
+   "options": "\nReturned\nEMD Issued\nEMD Under Process(office)\nConverted to Security"
+  },
+  {
+   "fieldname": "column_break_mwzqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bid_outcome",
+   "fieldtype": "Select",
+   "label": "Bid Outcome",
+   "options": "\nSuccessful\nUnsuccessful"
+  },
+  {
+   "fetch_from": "related_tender.bid_validity",
+   "fieldname": "bid_validity",
+   "fieldtype": "Data",
+   "label": "Bid Validity"
+  },
+  {
+   "fetch_from": "related_tender.tenderer_email",
+   "fieldname": "tenderer_email",
+   "fieldtype": "Data",
+   "label": "Tenderer Email"
+  },
+  {
+   "fieldname": "emd_preparation_status",
+   "fieldtype": "Select",
+   "label": "EMD Preparation Status",
+   "options": "\nEMD Issued\nEMD Under Process(office)\nReturned"
+  },
+  {
+   "fieldname": "column_break_ajuy6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "related_tender",
+   "fieldtype": "Link",
+   "label": "Related Tender",
+   "options": "Tender Notification"
+  },
+  {
+   "fetch_from": "related_tender.submission_deadline",
+   "fieldname": "submission_deadline",
+   "fieldtype": "Date",
+   "label": "Submission Deadline"
+  },
+  {
+   "fetch_from": "related_tender.tender_id",
+   "fieldname": "tender_id",
+   "fieldtype": "Data",
+   "label": "Tender ID"
+  },
+  {
+   "fieldname": "emd_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "EMD Calculation"
+  },
+  {
+   "fetch_from": "related_tender.annual_cost",
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Cost",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "manual_entry",
+   "fieldtype": "Check",
+   "label": "Undefined Annual Cost"
+  },
+  {
+   "fieldname": "column_break_opdbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emd_rate",
+   "fieldtype": "Float",
+   "label": "EMD Percentage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tdzdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emd_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "EMD Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Data",
+   "label": "Amount In Words"
+  },
+  {
+   "fieldname": "column_break_b8toi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_fwo65",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emd_softcopy",
+   "fieldtype": "Attach",
+   "label": "EMD Softcopy"
+  },
+  {
+   "fieldname": "column_break_sidnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_rcpt_eproc",
+   "fieldtype": "Attach",
+   "label": "Payment Rcpt Eproc"
+  },
+  {
+   "fieldname": "bid_lost_flash_message",
+   "fieldtype": "HTML",
+   "label": "Bid Lost Flash Message"
+  },
+  {
+   "fieldname": "winner_message",
+   "fieldtype": "HTML",
+   "label": "Winner Message"
+  },
+  {
+   "fetch_from": "related_tender.tenderer",
+   "fieldname": "tenderer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Tenderer"
+  },
+  {
+   "fetch_from": "related_tender.tenderer_address",
+   "fieldname": "tenderer_address",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tenderer Address"
+  },
+  {
+   "fetch_from": "related_tender.bid_expiry_date",
+   "fieldname": "bid_expiry_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Bid Expiry Date"
+  },
+  {
+   "fetch_from": "related_tender.now_date",
+   "fieldname": "now_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Now Date"
+  },
+  {
+   "fetch_from": "related_tender.tender_publish_date",
+   "fieldname": "tender_publish_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Tender Publish Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "EMD Management",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Tender Notification",
+   "link_fieldname": "tenderer"
+  },
+  {
+   "link_doctype": "Pre-bid Meeting",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tech and Fin",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "ATC",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Opening and Evaluation Details",
+   "link_fieldname": "related_submission"
+  },
+  {
+   "link_doctype": "Bank Guarantee Management",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Contract Signing and Execution",
+   "link_fieldname": "related_notification"
+  }
+ ],
+ "modified": "2025-04-08 15:47:50.896728",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "EMD Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tenderer"
+}

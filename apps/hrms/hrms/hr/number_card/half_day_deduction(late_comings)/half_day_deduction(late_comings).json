@@ -1,0 +1,22 @@
+{
+ "color": "#EC864B",
+ "creation": "2024-05-10 16:06:49.968623",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Employee Checkin",
+ "filters_json": "[[\"Employee Checkin\",\"half_day_attendance\",\"=\",1,false],[\"Employee Checkin\",\"login_time\",\">=\",\"09:41:00\",false]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Half Day Deduction(Late Comings)",
+ "modified": "2024-08-05 12:17:21.054831",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Half Day Deduction(Late Comings)",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

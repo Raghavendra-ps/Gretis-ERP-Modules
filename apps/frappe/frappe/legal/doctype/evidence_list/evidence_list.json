@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 16:00:27.659893",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_evidence_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_evidence_list",
+   "fieldtype": "Select",
+   "label": "Select Evidence List ",
+   "options": "\nOral evidence\nDocumentary evidence\nPrimary evidence\nSecondary evidence\nReal evidence\nHearsay evidence\nJudicial evidence\nNon Judicial evidence"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-06 16:00:27.659893",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Evidence List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

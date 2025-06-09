@@ -1,0 +1,35 @@
+{
+ "allow_roles": [
+  {
+   "role": "CEO"
+  },
+  {
+   "role": "Tender Executive"
+  },
+  {
+   "role": "Sales Lead Viewer"
+  },
+  {
+   "role": "GM OPS"
+  }
+ ],
+ "creation": "2025-03-17 17:03:56.242587",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://docs.erpnext.com/docs/user/manual/en/",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2025-04-03 09:56:11.863981",
+ "modified_by": "tenders@gretisindia.com",
+ "module": "Tender",
+ "name": "Tender Mgmt",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Tender Notification"
+  }
+ ],
+ "subtitle": "Tender Notification, Prebid Meeting, Tech and Fin, and more..",
+ "success_message": "The Tender Module is all set up!",
+ "title": "Let's Set Up Your Tender Management"
+}

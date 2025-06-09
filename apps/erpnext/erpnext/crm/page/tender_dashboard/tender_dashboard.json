@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2024-12-18 16:02:18.163643",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-12-18 16:05:53.408331",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "tender-dashboard",
+ "owner": "Administrator",
+ "page_name": "tender-dashboard",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Tender Dashboard"
+}

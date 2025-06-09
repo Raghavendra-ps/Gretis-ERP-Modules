@@ -1,0 +1,816 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2023-10-10 10:37:00.801431",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workflow_state",
+  "tender_details_tab",
+  "tender_info_section",
+  "tender_id",
+  "tenderer",
+  "sourcing_entity",
+  "contract_period",
+  "column_break_zz0z7",
+  "tender_category",
+  "contact_person",
+  "tenderer_email",
+  "tender_publish_date",
+  "column_break_uxjtj",
+  "now_date",
+  "contact_phone",
+  "bid_expiry_date",
+  "previous_tender_party_name",
+  "column_break_e0bzj",
+  "tender_type",
+  "tender_source",
+  "bid_validity",
+  "tender_document",
+  "section_break_ptaqu",
+  "submission_deadline",
+  "tenderer_address",
+  "number_of_manpower",
+  "tender_management_team_section",
+  "assigning_manager",
+  "column_break_fckcc",
+  "full_name",
+  "tender_executive",
+  "section_break_plzpz",
+  "workforce",
+  "column_break_mcnwy",
+  "tender_description",
+  "amended_from",
+  "company_experience_tab",
+  "experience_section",
+  "company_experience",
+  "column_break_0l2jk",
+  "similar_projects",
+  "financial_stability_section",
+  "financial_turnover",
+  "column_break_g6pqw",
+  "financial_statements",
+  "technical_capability_section",
+  "technical_capability",
+  "compliance_with_eligibility_criteria_section",
+  "eligibility_criteria",
+  "legal_requirements_section",
+  "statutory_compliances",
+  "tender_calculation_tab",
+  "field_color_index",
+  "annual_cost",
+  "percentage_fields_section",
+  "fd_rate",
+  "tds_on_gst",
+  "column_break_ii1um",
+  "tds_on_invoice",
+  "fd_on_bg",
+  "column_break_rwsp0",
+  "gst_rate",
+  "bank_guarantee_expense",
+  "column_break_azjqq",
+  "interest_on_limit",
+  "admin_charges",
+  "column_break_e47t5",
+  "bg_rate",
+  "emd_rate",
+  "amount_fields_section",
+  "emd_amount",
+  "tds_on_gst_amt",
+  "column_break_2q7ll",
+  "tds_on_invoice_amt",
+  "bg_amount",
+  "column_break_xpiph",
+  "less_gst_annual_value",
+  "advance_salary",
+  "expenses_section",
+  "bg_expense",
+  "column_break_zrvli",
+  "interest_on_limit_expense",
+  "column_break_eb1yt",
+  "income_on_fd",
+  "column_break_9w5hd",
+  "total_expense_bg",
+  "uniform_expenses_section",
+  "uniform_cost_per_person",
+  "column_break_mcfwv",
+  "number_of_persons",
+  "column_break_olqph",
+  "uniform_expense",
+  "labour_expenses_section",
+  "labour_licence_cost_per_person",
+  "column_break_8gqta",
+  "count_of_persons",
+  "column_break_fn6jm",
+  "labour_expense",
+  "column_break_9tavw",
+  "advance_salary_days",
+  "column_break_lcopj",
+  "advance_salary_expense",
+  "summary_section",
+  "margin_10_percent",
+  "column_break_rxzni",
+  "total_expense",
+  "column_break_vk9nz",
+  "total_income",
+  "column_break_ghlfp",
+  "net_income",
+  "section_break_ywqls",
+  "tender_qualification_section",
+  "is_tender_fisible",
+  "status_chart",
+  "current_state",
+  "round_figures",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "tender_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tender Details"
+  },
+  {
+   "fieldname": "tender_info_section",
+   "fieldtype": "Section Break",
+   "label": "Tender Info"
+  },
+  {
+   "fieldname": "tender_id",
+   "fieldtype": "Data",
+   "label": "Tender ID"
+  },
+  {
+   "fieldname": "tenderer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tenderer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sourcing_entity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sourcing Entity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_period",
+   "fieldtype": "Select",
+   "label": "Contract Period",
+   "options": "\n1 Year\n2 Years\n3 Years\n4 Years\n5 Years"
+  },
+  {
+   "fieldname": "column_break_zz0z7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tender_category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nManpower Services\nTechnical Services\nSupply Chain\nOthers",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "amended_from.count_of_persons",
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenderer_email",
+   "fieldtype": "Data",
+   "label": "Tenderer Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_publish_date",
+   "fieldtype": "Date",
+   "label": "Tender Publish Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uxjtj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "now_date",
+   "fieldtype": "Date",
+   "label": "Now Date"
+  },
+  {
+   "fieldname": "contact_phone",
+   "fieldtype": "Data",
+   "label": "Contact Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bid_expiry_date",
+   "fieldtype": "Date",
+   "label": "Bid Expiry Date"
+  },
+  {
+   "fieldname": "previous_tender_party_name",
+   "fieldtype": "Data",
+   "label": "Previous Tender Party Name"
+  },
+  {
+   "fieldname": "column_break_e0bzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tender_type",
+   "fieldtype": "Select",
+   "label": "Tender Type",
+   "options": "Government\nPrivate\nSemi Government\nInternational",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_source",
+   "fieldtype": "Link",
+   "label": "Tender Source",
+   "options": "Website List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bid_validity",
+   "fieldtype": "Data",
+   "label": "Bid Validity (in days)",
+   "options": "\n"
+  },
+  {
+   "fieldname": "tender_document",
+   "fieldtype": "Attach",
+   "label": "Tender Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ptaqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submission_deadline",
+   "fieldtype": "Datetime",
+   "label": "Submission Deadline",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tenderer_address",
+   "fieldtype": "Data",
+   "label": "Tenderer Address"
+  },
+  {
+   "fieldname": "number_of_manpower",
+   "fieldtype": "Data",
+   "label": "Number of Manpower"
+  },
+  {
+   "fieldname": "tender_management_team_section",
+   "fieldtype": "Section Break",
+   "label": "Tender Management Team"
+  },
+  {
+   "fieldname": "assigning_manager",
+   "fieldtype": "Link",
+   "label": "Assigning Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_fckcc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Full Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "full_name.employee_name",
+   "fieldname": "tender_executive",
+   "fieldtype": "Data",
+   "label": "Tender Executive"
+  },
+  {
+   "fieldname": "section_break_plzpz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.tender_category == 'Manpower Services'",
+   "fieldname": "workforce",
+   "fieldtype": "Table",
+   "label": "Workforce",
+   "options": "Workforce"
+  },
+  {
+   "fieldname": "column_break_mcnwy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "tender_description",
+   "fieldtype": "Text Editor",
+   "label": "Tender Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tender Notification",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_experience_tab",
+   "fieldtype": "Tab Break",
+   "label": "Qualf Analysis"
+  },
+  {
+   "fieldname": "experience_section",
+   "fieldtype": "Section Break",
+   "label": "Experience"
+  },
+  {
+   "description": "Years of Experience in similar Projects",
+   "fieldname": "company_experience",
+   "fieldtype": "Data",
+   "label": "Company Experience",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_0l2jk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "description": "Name the Projects here",
+   "fieldname": "similar_projects",
+   "fieldtype": "Data",
+   "label": "Similar Projects",
+   "reqd": 1
+  },
+  {
+   "fieldname": "financial_stability_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Stability"
+  },
+  {
+   "fieldname": "financial_turnover",
+   "fieldtype": "Currency",
+   "label": "Financial Turnover",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_g6pqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "financial_statements",
+   "fieldtype": "Attach",
+   "label": "Financial Statements",
+   "reqd": 1
+  },
+  {
+   "fieldname": "technical_capability_section",
+   "fieldtype": "Section Break",
+   "label": "Technical Capability"
+  },
+  {
+   "fieldname": "technical_capability",
+   "fieldtype": "Table",
+   "label": "Technical Capability",
+   "options": "Technical Capability",
+   "reqd": 1
+  },
+  {
+   "fieldname": "compliance_with_eligibility_criteria_section",
+   "fieldtype": "Section Break",
+   "label": "Compliance with Eligibility Criteria"
+  },
+  {
+   "fieldname": "eligibility_criteria",
+   "fieldtype": "Table",
+   "label": "Eligibility Criteria",
+   "options": "Eligibility Criteria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "legal_requirements_section",
+   "fieldtype": "Section Break",
+   "label": "Statutory Compliance"
+  },
+  {
+   "fieldname": "statutory_compliances",
+   "fieldtype": "Table",
+   "label": "Statutory Compliances",
+   "options": "Statutory Compliances List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_calculation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tender Fisibility"
+  },
+  {
+   "fieldname": "field_color_index",
+   "fieldtype": "HTML",
+   "label": "Field Color Index",
+   "options": "<div style=\"padding: 10px; border: 1px solid #ddd; margin-bottom: 15px;\">\n    <h4>Field Color Index for Tender Feasibility Section</h4>\n    <ul>\n        <li><span style=\"color: #edae91;\"><b>Light Orange Fields</b></span>: Editable fields for critical cost data.</li>\n        <li><span style=\"color: yellow;\"><b>Yellow Fields</b></span>: Restricted fields with pre-defined values that cannot be edited.</li>\n        <li><span style=\"color: blue;\"><b>Blue Fields</b></span>: Editable fields for general data entry, calculations, or tender details.</li>\n        <li><span style=\"color: #a2ed79;\"><b>Bright Pastel Green Fields</b></span>: Fields for summary and net calculations, including margins and total values.</li>\n    </ul>\n</div>"
+  },
+  {
+   "fieldname": "annual_cost",
+   "fieldtype": "Currency",
+   "label": "Annual Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "percentage_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Percentage Fields"
+  },
+  {
+   "fieldname": "fd_rate",
+   "fieldtype": "Float",
+   "label": "FD Rate"
+  },
+  {
+   "fieldname": "tds_on_gst",
+   "fieldtype": "Float",
+   "label": "TDS on GST"
+  },
+  {
+   "fieldname": "column_break_ii1um",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tds_on_invoice",
+   "fieldtype": "Float",
+   "label": "TDS on invoice"
+  },
+  {
+   "fieldname": "fd_on_bg",
+   "fieldtype": "Float",
+   "label": "FD on BG"
+  },
+  {
+   "fieldname": "column_break_rwsp0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gst_rate",
+   "fieldtype": "Float",
+   "label": "GST Rate"
+  },
+  {
+   "fieldname": "bank_guarantee_expense",
+   "fieldtype": "Float",
+   "label": "Bank Guarantee Expense"
+  },
+  {
+   "fieldname": "column_break_azjqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interest_on_limit",
+   "fieldtype": "Float",
+   "label": "Interest on Limit"
+  },
+  {
+   "fieldname": "admin_charges",
+   "fieldtype": "Float",
+   "label": "Admin Charges"
+  },
+  {
+   "fieldname": "column_break_e47t5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bg_rate",
+   "fieldtype": "Float",
+   "label": "BG Rate"
+  },
+  {
+   "fieldname": "emd_rate",
+   "fieldtype": "Float",
+   "label": "EMD Rate"
+  },
+  {
+   "fieldname": "amount_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Amount Fields"
+  },
+  {
+   "fieldname": "emd_amount",
+   "fieldtype": "Currency",
+   "label": "EMD Amount"
+  },
+  {
+   "fieldname": "tds_on_gst_amt",
+   "fieldtype": "Currency",
+   "label": "TDS on GST Amt"
+  },
+  {
+   "fieldname": "column_break_2q7ll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tds_on_invoice_amt",
+   "fieldtype": "Currency",
+   "label": "TDS on Invoice Amt"
+  },
+  {
+   "fieldname": "bg_amount",
+   "fieldtype": "Currency",
+   "label": "BG Amount"
+  },
+  {
+   "fieldname": "column_break_xpiph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "less_gst_annual_value",
+   "fieldtype": "Currency",
+   "label": "Less GST Annual Value"
+  },
+  {
+   "fieldname": "advance_salary",
+   "fieldtype": "Float",
+   "label": "Advance Salary"
+  },
+  {
+   "description": "BG (Bank Guarantee) Expenses",
+   "fieldname": "expenses_section",
+   "fieldtype": "Section Break",
+   "label": "Expense Management"
+  },
+  {
+   "fieldname": "bg_expense",
+   "fieldtype": "Currency",
+   "label": "BG Expense"
+  },
+  {
+   "fieldname": "column_break_zrvli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interest_on_limit_expense",
+   "fieldtype": "Currency",
+   "label": "Interest on Limit Expense"
+  },
+  {
+   "fieldname": "column_break_eb1yt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_on_fd",
+   "fieldtype": "Currency",
+   "label": "Income on FD"
+  },
+  {
+   "fieldname": "column_break_9w5hd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_expense_bg",
+   "fieldtype": "Currency",
+   "label": "Total Expense BG"
+  },
+  {
+   "fieldname": "uniform_expenses_section",
+   "fieldtype": "Section Break",
+   "label": "Uniform Expenses"
+  },
+  {
+   "fieldname": "uniform_cost_per_person",
+   "fieldtype": "Currency",
+   "label": "Uniform Cost per Person"
+  },
+  {
+   "fieldname": "column_break_mcfwv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_persons",
+   "fieldtype": "Int",
+   "label": "Number of Persons"
+  },
+  {
+   "fieldname": "column_break_olqph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uniform_expense",
+   "fieldtype": "Currency",
+   "label": "Uniform Expense"
+  },
+  {
+   "fieldname": "labour_expenses_section",
+   "fieldtype": "Section Break",
+   "label": "Labour Expenses"
+  },
+  {
+   "fieldname": "labour_licence_cost_per_person",
+   "fieldtype": "Currency",
+   "label": "Labour Licence Cost per Person"
+  },
+  {
+   "fieldname": "column_break_8gqta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "amended_from.number_of_manpower",
+   "fieldname": "count_of_persons",
+   "fieldtype": "Int",
+   "label": "Count of Persons"
+  },
+  {
+   "fieldname": "column_break_fn6jm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "labour_expense",
+   "fieldtype": "Currency",
+   "label": "Labour Expense"
+  },
+  {
+   "fieldname": "column_break_9tavw",
+   "fieldtype": "Section Break",
+   "label": "Advance Salary Expenses"
+  },
+  {
+   "fieldname": "advance_salary_days",
+   "fieldtype": "Float",
+   "label": "Advance Salary Days"
+  },
+  {
+   "fieldname": "column_break_lcopj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "advance_salary_expense",
+   "fieldtype": "Currency",
+   "label": "Advance Salary Expense"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "margin_10_percent",
+   "fieldtype": "Currency",
+   "label": "Margin @ 10 percent"
+  },
+  {
+   "fieldname": "column_break_rxzni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_expense",
+   "fieldtype": "Currency",
+   "label": "Total Expense"
+  },
+  {
+   "fieldname": "column_break_vk9nz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_income",
+   "fieldtype": "Currency",
+   "label": "Total Income"
+  },
+  {
+   "fieldname": "column_break_ghlfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_income",
+   "fieldtype": "Currency",
+   "label": "Net Income"
+  },
+  {
+   "fieldname": "section_break_ywqls",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tender_qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Tender Fisibility"
+  },
+  {
+   "bold": 1,
+   "fieldname": "is_tender_fisible",
+   "fieldtype": "Select",
+   "label": "Is Tender Fisible",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status_chart",
+   "fieldtype": "HTML",
+   "label": "Status Chart"
+  },
+  {
+   "fieldname": "current_state",
+   "fieldtype": "Select",
+   "label": "Current State",
+   "options": "\nDraft\nSubmitted\nApproved\nRejected"
+  },
+  {
+   "default": "0",
+   "fieldname": "round_figures",
+   "fieldtype": "Check",
+   "label": "Round Figures for EMD"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nInactive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Pre-bid Meeting",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tech and Fin",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "EMD Management",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "ATC",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Opening and Evaluation Details",
+   "link_fieldname": "related_submission"
+  },
+  {
+   "link_doctype": "Bank Guarantee Management",
+   "link_fieldname": "related_tender"
+  },
+  {
+   "link_doctype": "Tender Contract Signing and Execution",
+   "link_fieldname": "related_notification"
+  }
+ ],
+ "make_attachments_public": 1,
+ "modified": "2025-05-07 11:53:22.935193",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Tender Notification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Executive",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "tenderer",
+ "track_changes": 1
+}

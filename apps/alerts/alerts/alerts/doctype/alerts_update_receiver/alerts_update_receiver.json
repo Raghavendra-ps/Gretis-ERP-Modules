@@ -1,0 +1,30 @@
+{
+ "allow_copy": 1,
+ "allow_import": 1,
+ "autoname": "hash",
+ "creation": "2023-04-04 04:04:04.119400",
+ "description": "Update receiver for Alerts",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "reqd": 1,
+   "bold": 1,
+   "in_list_view": 1,
+   "ignore_user_permissions": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2024-01-27 04:04:04.119400",
+ "modified_by": "Administrator",
+ "module": "Alerts",
+ "name": "Alerts Update Receiver",
+ "owner": "Administrator"
+}

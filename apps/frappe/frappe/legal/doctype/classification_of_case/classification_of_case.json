@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 12:45:03.073794",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "civil_cases_section",
+  "civil_case_type",
+  "criminal_cases_section",
+  "criminal_case_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "civil_cases_section",
+   "fieldtype": "Section Break",
+   "label": "Civil Cases"
+  },
+  {
+   "fieldname": "civil_case_type",
+   "fieldtype": "Select",
+   "label": "Civil Case Type",
+   "options": "\nProperty\nDispute\nContract Case\nFamily Law Cases\nTorts\nEmployment and Labor Dispute\nPIL\nCorporate Dispute\nInsurance Dispute\nPublic Interest Litigation\nDebt Recovery\nProbate and Estate Cases\nLandlord-Tenant Dispute\nIntellectual Property Disputes\nConsumer Disputes\nBankruptcy Cases\nAdministrative Law Cases"
+  },
+  {
+   "fieldname": "criminal_cases_section",
+   "fieldtype": "Section Break",
+   "label": "Criminal Cases"
+  },
+  {
+   "fieldname": "criminal_case_type",
+   "fieldtype": "Select",
+   "label": "Criminal Case Type",
+   "options": "\nTheft and Burglary\nAssault and Battery\nMurder and Homicide\nRape and Sexual Assault\nDomestic Violence\nDrug-Related Crimes\nFraud and Financial Crimes\nCybercrimes\nDUI and DWI\nKidnapping and Abduction\nArson\nVandalism\nCounterfeiting and Forgery\nTerrorism\nPoaching and Wildlife Crime\nPublic Order Crimes\nJuvenile Crimes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-06 12:45:03.073794",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Classification of Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

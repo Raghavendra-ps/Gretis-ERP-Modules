@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-04 11:07:00.842317",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "log_file",
+  "upload_status",
+  "employee_mapping_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "log_file",
+   "fieldtype": "Attach",
+   "label": "Log File"
+  },
+  {
+   "fieldname": "upload_status",
+   "fieldtype": "Data",
+   "label": "Upload Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_mapping_file",
+   "fieldtype": "Attach",
+   "label": "Employee Mapping File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-04 11:27:17.365123",
+ "modified_by": "Administrator",
+ "module": "Integrations",
+ "name": "Biometric Log Upload",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,24 @@
+{
+ "cards": [
+  {
+   "card": "Late Entry (This Month)"
+  }
+ ],
+ "charts": [
+  {
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-03-28 17:08:46.270340",
+ "dashboard_name": "Gretis Late Comings",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-03-28 17:08:46.270340",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Gretis Late Comings",
+ "owner": "Administrator"
+}

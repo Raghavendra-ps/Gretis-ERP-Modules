@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 12:49:09.020023",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "defendant_1",
+  "through_1",
+  "address_1",
+  "phone_1"
+ ],
+ "fields": [
+  {
+   "fieldname": "defendant_1",
+   "fieldtype": "Data",
+   "label": "Defendant 1"
+  },
+  {
+   "fieldname": "through_1",
+   "fieldtype": "Data",
+   "label": "Through 1"
+  },
+  {
+   "fieldname": "address_1",
+   "fieldtype": "Data",
+   "label": "Address 1"
+  },
+  {
+   "fieldname": "phone_1",
+   "fieldtype": "Data",
+   "label": "Phone 1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-06 12:49:19.678597",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Defendant 1",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "defendant_1"
+}

@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-17 12:04:55.544966",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_party",
+  "document_type",
+  "next_date",
+  "purpose",
+  "doc_attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_party",
+   "fieldtype": "Link",
+   "label": "Name of Party",
+   "options": "Case Documentation"
+  },
+  {
+   "fieldname": "next_date",
+   "fieldtype": "Date",
+   "label": "Next Date"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nContract\nAffidavit\nLegal Notice\nCompliance Document"
+  },
+  {
+   "fieldname": "doc_attachment",
+   "fieldtype": "Attach",
+   "label": "Doc Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-17 12:07:13.627594",
+ "modified_by": "Administrator",
+ "module": "Legal",
+ "name": "Legal Doc Master",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

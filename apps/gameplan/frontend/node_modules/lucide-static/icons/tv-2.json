@@ -1,0 +1,16 @@
+{
+  "$schema": "../icon.schema.json",
+  "contributors": [
+    "ericfennis"
+  ],
+  "tags": [
+    "flatscreen",
+    "television",
+    "stream",
+    "display"
+  ],
+  "categories": [
+    "devices",
+    "multimedia"
+  ]
+}

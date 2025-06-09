@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-24 09:47:50.298516",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "financial_year",
+  "remarks",
+  "section_break_f0l2r",
+  "category",
+  "date",
+  "section_break_g8poe",
+  "resolution_file",
+  "section_break_wdbbr",
+  "directors"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title "
+  },
+  {
+   "fieldname": "financial_year",
+   "fieldtype": "Link",
+   "label": "Financial Year",
+   "options": "Financial Year"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Resolution Category"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date "
+  },
+  {
+   "fieldname": "resolution_file",
+   "fieldtype": "Attach",
+   "label": "Resolution File"
+  },
+  {
+   "fieldname": "directors",
+   "fieldtype": "Table",
+   "label": "Directors ",
+   "options": "Directors"
+  },
+  {
+   "fieldname": "section_break_f0l2r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wdbbr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_g8poe",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-16 17:04:23.815028",
+ "modified_by": "Administrator",
+ "module": "Company Resolution",
+ "name": "Company Resolution",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

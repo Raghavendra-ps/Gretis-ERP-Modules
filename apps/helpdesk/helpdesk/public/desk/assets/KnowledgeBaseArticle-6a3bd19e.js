@@ -1,0 +1,2 @@
+import{_ as o}from"./KnowledgeBaseArticle.vue_vue_type_script_setup_true_lang-d5b908b3.js";import"./index-683cf2d0.js";import"./TextEditor-2f395107.js";import"./error-95942cf5.js";import"./notification-bcfdfaa4.js";import"./more-horizontal-09e3374d.js";import"./PageTitle.vue_vue_type_script_setup_true_lang-f25ecf72.js";import"./iconify-ab660f87.js";import"./Dropdown-cb3c7d7d.js";import"./edit-3-0cc4c723.js";import"./Avatar.vue_vue_type_script_setup_true_lang-3a9f1ac4.js";export{o as default};
+//# sourceMappingURL=KnowledgeBaseArticle-6a3bd19e.js.map
